@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'Landing', component:LandingComponent},
   { path: '', component:LoginOtpComponent  },
   { path: 'forgot-password', component:ForgotPasswordComponent},
-  { path: 'new-password', component:NewPasswordComponent  },
+  { path: 'newpassword', component:NewPasswordComponent  },
 
 
 ];

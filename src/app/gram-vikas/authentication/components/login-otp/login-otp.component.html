@@ -1,9 +1,9 @@
-<div class=" w-screen h-screen justify-center  ">
-    <div class=" w-full grid place-content-center ">
-        <div class=" justify-start w-full place-items-center ">
-
-            <div class="mt-40 ">
-                <svg width="375" height="53" viewBox="0 0 375 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class=" w-full h-screen ">
+    <div class="w-full h-full place-items-center grid border1 ">
+        <div class="w-full h-full place-content-center grid md:px-2 sm:px-0 border1">
+            <div class="grid place-content-center ">
+                <svg class="md:w-80 sm:w-64 xs:w-56 h-12" viewBox="0 0 375 53" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M32.5998 2.25263C30.7171 0.937819 28.5088 0.166809 26.2169 0.0241529C23.925 -0.118503 21.6381 0.372702 19.6069 1.44391C17.5757 2.51511 15.8787 4.12494 14.702 6.09687C13.5253 8.0688 12.9144 10.3267 12.9361 12.6229L19.1881 12.5637C19.1772 11.4156 19.4827 10.2867 20.071 9.30069C20.6594 8.31472 21.5079 7.5098 22.5235 6.9742C23.5391 6.4386 24.6825 6.193 25.8285 6.26433C26.9744 6.33565 28.0786 6.72116 29.0199 7.37857L32.5998 2.25263Z"
                         fill="#046A38" />
@@ -36,56 +36,81 @@
                         fill="#FF671F" />
                 </svg>
             </div>
+            <div>
+                <div class="mt-20 gap-y-2 grid ">
+                    <div class="font-bold text-3xl  text-gray-700 ">
+                        Enter Verification Code
+                    </div>
+                    <div class="text-base text-start text-gray-500 ">
+                        We have sent an code to example@gmail.com
+                    </div>
+                </div>
+                <div class=" mt-9 ">
+                    <div class="">
+                        <div class="">
+                            <div class="w-full ">
+                                <div class="bg-white py-4 rounded text-center">
+                                    <div id="otp" class="flex flex-row justify-between text-center ">
+                                        <input
+                                            class="outline-none h-12 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
+                                            type="text" id="first" maxlength="1" style="border: 2px solid #D0D5DD;" />
 
-            <div class=" mt-32 font-bold 2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl text-gray-700 ">
-                Enter Verification Code
-            </div>
-            <div class="text-sm text-start text-gray-500 mt-6">
-                We have sent an code to example@gmail.com
-            </div>
+                                        <input
+                                            class="outline-none h-12 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
+                                            type="text" id="second" maxlength="1" style="border: 2px solid #D0D5DD;" />
 
-            <div class="px-3 mt-9">
-                <div class="mx-auto">
-                    <div class="max-w-sm mx-auto md:max-w-lg">
-                        <div class="w-full ">
-                            <div class="bg-white py-4 rounded text-center">
-                                <div id="otp" class="flex flex-row justify-between text-center px-2">
-                                    <input
-                                        class="outline-none h-10 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
-                                        type="text" id="first" maxlength="1" style="border: 2px solid #D0D5DD;" />
+                                        <input
+                                            class="outline-none h-12 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
+                                            type="text" id="third" maxlength="1" style="border: 2px solid #D0D5DD;" />
 
-                                    <input
-                                        class="outline-none h-10 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
-                                        type="text" id="second" maxlength="1" style="border: 2px solid #D0D5DD;" />
+                                        <input
+                                            class="outline-none h-12 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
+                                            type="text" id="fourth" maxlength="1" style="border: 2px solid #D0D5DD;" />
 
-                                    <input
-                                        class="outline-none h-10 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
-                                        type="text" id="third" maxlength="1" style="border: 2px solid #D0D5DD;" />
+                                        <input
+                                            class="outline-none h-12 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
+                                            type="text" id="third" maxlength="1" style="border: 2px solid #D0D5DD;" />
 
-                                    <input
-                                        class="outline-none h-10 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
-                                        type="text" id="fourth" maxlength="1" style="border: 2px solid #D0D5DD;" />
-
-                                    <input
-                                        class="outline-none h-10 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
-                                        type="text" id="third" maxlength="1" style="border: 2px solid #D0D5DD;" />
-
-                                    <input
-                                        class="outline-none h-10 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
-                                        type="text" id="fourth" maxlength="1" style="border: 2px solid #D0D5DD;" />
+                                        <input
+                                            class="outline-none h-12 w-14 text-center font-bold text-[#1D2939] form-control rounded-lg"
+                                            type="text" id="fourth" maxlength="1" style="border: 2px solid #D0D5DD;" />
+                                    </div>
+                                    <div class="text-red-700"></div>
                                 </div>
-                                <div class="text-red-700"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <button
+                    class=" mt-9 bg-green-600 w-full  outline-offset-3 outline-none  text-white   py-2 px-4 border-none  rounded-lg font-semibold font-Rubik">
+                    Verify OTP
+                </button>
+                <div class="font-bold mt-2 text-center">2:00</div>
             </div>
-
-            <button
-                class=" mt-9 bg-green-600 w-full  outline-offset-3 outline-none  text-white   py-2 px-4 border-none  rounded-lg font-semibold font-Rubik">
-                Verify OTP
-            </button>
-            <div class="font-bold mt-2 text-center">2:00</div>
+            <div class="flex justify-center  mt-8">
+                <div class=" flex font-normal text-[#475467]">Didn't Receive OTP ?
+                    <div class="text-[#FF671F] font-semibold underline underline-offset-4">
+                        <button class="underline underline-offset-4 ml-1">Resend Again</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center  mt-8">
+                <div class="flex font-normal text-[#475467]">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                            stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 16V12" stroke="#344054" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 8H12.01" stroke="#344054" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span class="ml-3 text-gray-700 font-normal">
+                        <p>Note : You will receive an code on your registered </p>
+                        <p>email only if your email ID is registered with us.</p>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </div>

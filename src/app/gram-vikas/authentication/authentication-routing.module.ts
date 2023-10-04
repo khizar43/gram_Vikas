@@ -9,11 +9,11 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { NewPasswordComponent } from './components/new-password/new-password.component';
 
 const routes: Routes = [
-  { path: 'otp', component:SplashScreenComponent},
+  { path: '', component:SplashScreenComponent},
   { path: 'app-language', component:AppLanguageComponent},
   { path: 'login', component:LoginComponent},
   { path: 'Landing', component:LandingComponent},
-  { path: '', component:LoginOtpComponent  },
+  { path: 'otp', component:LoginOtpComponent  },
   { path: 'forgot-password', component:ForgotPasswordComponent},
   { path: 'new-password', component:NewPasswordComponent  },
 

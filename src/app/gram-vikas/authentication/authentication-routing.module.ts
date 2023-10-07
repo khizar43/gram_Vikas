@@ -9,13 +9,14 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { NewPasswordComponent } from './components/new-password/new-password.component';
 
 const routes: Routes = [
-  { path: '', component:SplashScreenComponent},
-  { path: 'app-language', component:AppLanguageComponent},
-  { path: 'login', component:LoginComponent},
-  { path: 'Landing', component:LandingComponent},
-  { path: 'otp', component:LoginOtpComponent  },
-  { path: 'forgot-password', component:ForgotPasswordComponent},
-  { path: 'newpassword', component:NewPasswordComponent  },
+  { path: '', component: SplashScreenComponent },
+  { path: 'app-language', component: AppLanguageComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'Landing', component: LandingComponent },
+  { path: 'otp', component: LoginOtpComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'newpassword', component: NewPasswordComponent },
+
 
 ];
 

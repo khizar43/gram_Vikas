@@ -8,16 +8,23 @@ import { VillageComponent } from './Components/village/village.component';
 import { NotificationComponent } from './Components/notification/notification.component';
 
 
+
+
+
 @NgModule({
   declarations: [
     HomeComponent,
     AgentProfileComponent,
     VillageComponent,
-    NotificationComponent
+    NotificationComponent,
+
+
+
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+
   ]
 })
 export class DashboardModule { }

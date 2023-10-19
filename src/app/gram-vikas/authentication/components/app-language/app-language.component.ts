@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ErrorHandler } from '@angular/core';
 
 @Component({
   selector: 'app-app-language',
@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class AppLanguageComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
 }
+

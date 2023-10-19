@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { HomeComponent } from './Components/home/home.component';
-import { AgentProfileComponent } from './Components/agent-profile/agent-profile.component';
-import { VillageComponent } from './Components/village/village.component';
-import { NotificationComponent } from './Components/notification/notification.component';
+import { HomeComponent } from './components/home/home.component';
+import { AgentProfileComponent } from './components/agent-profile/agent-profile.component';
+import { VillageComponent } from './components/village/village.component';
+import { NotificationComponent } from './components/notification/notification.component';
 
 
 

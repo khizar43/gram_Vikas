@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run sentry:sourcemaps",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -21,7 +21,9 @@
     "@angular/router": "^15.2.10",
     "@angular/service-worker": "^15.2.10",
     "@fontsource/poppins": "^5.0.8",
+    "@sentry/angular": "^7.77.0",
     "@sentry/angular-ivy": "^7.77.0",
+    "@sentry/tracing": "^7.77.0",
     "bootstrap": "^5.3.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

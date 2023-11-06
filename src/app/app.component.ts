@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   title = 'Gramvikas-pwa';
 
 constructor(){
-  throw new Error("testing sentry");
+  // throw new Error("testing sentry");
 }
   ngOnInit(): void {
     throw new Error('Method not implemented.');

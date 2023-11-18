@@ -1,0 +1,58 @@
+{
+    "count": {
+        "villages": 435,
+        "families": 1234,
+        "population": 24354
+    },
+    "villages": [
+        {
+            "id": 1,
+            "name": "Karegaon",
+            "status":"Published",
+            "state": "Maharashtra",
+            "District": "Ahmednagar",
+            "population": 3421,
+            "families": 322,
+            "area": "830H"
+        },
+        {
+            "id": 2,
+            "name": "Bordi",
+            "status":"Published",
+            "state": "Maharashtra",
+            "District": "Akola",
+            "population": 3421,
+            "families": 322,
+            "area": "830H"
+        },
+        {
+            "id": 3,
+            "name": "Kaneri",
+            "status":"Published",
+            "state": "Maharashtra",
+            "District": "Kolhapur",
+            "population": 3421,
+            "families": 322,
+            "area": "830H"
+        },
+        {
+            "id": 4,
+            "name": "Kaneriwadi",
+            "status":"Published",
+            "state": "Maharashtra",
+            "District": "Kolhapur",
+            "population": 3421,
+            "families": 322,
+            "area": "830H"
+        }
+    ],
+    
+    "families":[
+        {
+            "id":1,
+            "name":""
+            
+        }
+
+    ]
+}

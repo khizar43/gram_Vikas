@@ -7,6 +7,7 @@ import { AgentProfileComponent } from './components/agent-profile/agent-profile.
 import { VillageComponent } from './components/village/village.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
+import { DashboardSummaryComponent } from './dashboard-summary/components/dashboard-summary/dashboard-summary.component';
 FooterComponent
 
 
@@ -18,7 +19,8 @@ FooterComponent
     AgentProfileComponent,
     VillageComponent,
     NotificationComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardSummaryComponent
 
 
 

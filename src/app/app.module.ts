@@ -11,7 +11,8 @@ import { Router } from "@angular/router";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   // providers: [{
   //   provide: ErrorHandler,

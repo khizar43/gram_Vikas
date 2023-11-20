@@ -18,7 +18,7 @@
         {
             "id": 2,
             "name": "Bordi",
-            "status":"Published",
+            "status":"Not Published",
             "state": "Maharashtra",
             "District": "Akola",
             "population": 3421,
@@ -41,17 +41,58 @@
             "status":"Published",
             "state": "Maharashtra",
             "District": "Kolhapur",
-            "population": 3421,
+            "population": 4421,
             "families": 322,
             "area": "830H"
+        },
+        {
+            "id": 5,
+            "name": "Haneriwadi",
+            "status":"Published",
+            "state": "Maharashtra",
+            "District": "Kolhapur",
+            "population": 3421,
+            "families": 855,
+            "area": "830H"
+        },
+        {
+            "id": 6,
+            "name": "scneriwadi",
+            "status":"Not Published",
+            "state": "Maharashtra",
+            "District": "Kolhapur",
+            "population": 2421,
+            "families": 755,
+            "area": "830H"
+        },
+        {
+            "id": 7,
+            "name": "Daneriwadi",
+            "status":"Published",
+            "state": "Maharashtra",
+            "District": "Kolhapur",
+            "population": 3821,
+            "families": 366,
+            "area": "730H"
+        },
+        {
+            "id": 8,
+            "name": "Btneriwadi",
+            "status":"Not Published",
+            "state": "Maharashtra",
+            "District": "Kolhapur",
+            "population": 4821,
+            "families": 576,
+            "area": "530H"
         }
+
     ],
-    
+
     "families":[
         {
             "id":1,
             "name":""
-            
+
         }
 
     ]

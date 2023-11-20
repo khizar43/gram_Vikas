@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Router } from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { Router } from "@angular/router";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule
+
   ],
   // providers: [{
   //   provide: ErrorHandler,
@@ -29,11 +31,11 @@ import { Router } from "@angular/router";
   //   deps: [Sentry.TraceService],
   //   multi: true,
   // },
-// ],
+  // ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
- }
+}
 
 
 

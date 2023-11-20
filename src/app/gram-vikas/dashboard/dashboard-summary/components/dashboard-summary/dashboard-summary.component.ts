@@ -7,6 +7,7 @@ Why: This is provided to super admin as sometimes they might have to onboard a c
 
 //1. Imports - Angular Framework - Mandatory
 import { Component, OnInit } from '@angular/core';
+import { DashboardSummaryService } from '../../services/dashboard-summary.service';
 
 
 //2. Imports - Gram Vikas Modules - Opti
@@ -55,18 +56,26 @@ import { Component, OnInit } from '@angular/core';
 
 export class DashboardSummaryComponent implements OnInit {
 
-//13. Properties - Mandatory
+  //13. Properties - Mandatory
 
 
-//14. Constructor - Mandatory
-  constructor() { }
+  //14. Constructor - Mandatory
+  constructor(private _ser: DashboardSummaryService) { }
+  count: any
+  get_count() {
+    this._ser.get_counts_service().subscribe((res) => {
+      this.count = res
+      console.log("========>", this.count)
+    })
+  }
 
 
   //15. On Init - Mandatory
   ngOnInit(): void {
+    this.get_count()
   }
 
- //16. Functional Method 
+  //16. Functional Method
 
 }
 

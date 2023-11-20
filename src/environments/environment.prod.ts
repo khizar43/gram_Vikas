@@ -1,16 +1,16 @@
 export const environment = {
   production: true,
-
-//UAT URL
-
-
-//Production URL
+  dashboard: "http://localhost:3000",
+  //UAT URL
 
 
-//Dev URL
+  //Production URL
 
 
-  sentry:{
+  //Dev URL
+
+
+  sentry: {
     tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
   }
 };

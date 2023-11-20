@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { VillageComponent } from './components/village/village.component';
 import { HomeComponent } from './components/home/home.component';
+import { VillageComponent } from './components/village/village.component';
+
 
 const routes: Routes = [
   {

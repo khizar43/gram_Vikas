@@ -7,6 +7,10 @@ const routes: Routes = [
   loadChildren:()=>import('./villages/villages.module').then(m=>m.VillagesModule), 
 },
 {
+  path: 'addvillagers',
+  loadChildren: () => import('./villagers/add-villagers/add-villagers.module').then(m => m.AddVillagersModule),
+},
+{
   path:'dashboard',
 loadChildren:()=>import('./dashboard/dashboard.module').then(m=>m.DashboardModule), 
 },

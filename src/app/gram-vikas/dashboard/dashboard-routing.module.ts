@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { VillageComponent } from './components/village/village.component';
 import { AddVillageComponent } from '../villages/components/add-village/add-village.component';
+import { AgentProfileComponent } from './components/agent-profile/agent-profile.component';
 
 const routes: Routes = [
   {
@@ -16,7 +17,9 @@ const routes: Routes = [
   {
     path:'add-village',
     component:AddVillageComponent,
-  }
+  },
+  { path: 'agent-profile', component: AgentProfileComponent },
+
   
 ];
 

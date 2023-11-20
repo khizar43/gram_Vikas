@@ -53,6 +53,53 @@ import { Component, OnInit } from '@angular/core';
 //12. Class - Mandatory
 
 export class AgentProfileComponent implements OnInit {
+  
+  current: any;
+  max: number = 100;
+  stroke: number = 15;
+  radius: number = 125;
+  semicircle: boolean = true;
+  rounded: boolean = false;
+  responsive: boolean = false;
+  clockwise: boolean = true;
+  color: string = '#00A2E0';
+  background: string = '#ffffff';            //'#eaeaea';
+  duration: number = 800;
+  animation: string = 'easeOutCubic';
+  animationDelay: number = 0;
+  animations: Array<string> = [
+    'linearEase',
+    'easeInQuad',
+    'easeOutQuad',
+    'easeInOutQuad',
+    'easeInCubic',
+    'easeOutCubic',
+    'easeInOutCubic',
+    'easeInQuart',
+    'easeOutQuart',
+    'easeInOutQuart',
+    'easeInQuint',
+    'easeOutQuint',
+    'easeInOutQuint',
+    'easeInSine',
+    'easeOutSine',
+    'easeInOutSine',
+    'easeInExpo',
+    'easeOutExpo',
+    'easeInOutExpo',
+    'easeInCirc',
+    'easeOutCirc',
+    'easeInOutCirc',
+    'easeInElastic',
+    'easeOutElastic',
+    'easeInOutElastic',
+    'easeInBack',
+    'easeOutBack',
+    'easeInOutBack',
+    'easeInBounce',
+    'easeOutBounce',
+    'easeInOutBounce',
+  ];
 //13. Properties - Mandatory
 
 

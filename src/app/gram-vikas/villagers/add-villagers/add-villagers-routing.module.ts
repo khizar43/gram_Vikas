@@ -9,7 +9,7 @@ import { FamilyMemberDetailsComponent } from './components/family-member-details
 import { ProductivityComponent } from './components/productivity/productivity.component';
 
 const routes: Routes = [
-  { path: 'village-Details', component: VillageDetailsComponent },
+  { path: '', component: VillageDetailsComponent },
   { path: 'family-Details', component: FamilyDetailsComponent },
   { path: 'farming', component: FarmingComponent },
   { path: 'productivity', component: ProductivityComponent},

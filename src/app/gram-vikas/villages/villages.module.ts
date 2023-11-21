@@ -7,6 +7,8 @@ import { AddVillageComponent } from './components/add-village/add-village.compon
 import { UpdateVillageComponent } from './components/update-village/update-village.component';
 import { VillageStatusComponent } from './components/village-status/village-status.component';
 import { FormToBeFilledComponent } from './components/form-to-be-filled/form-to-be-filled.component';
+import { VillageFacilityComponent } from './components/village-facility/village-facility.component';
+import { UploadVillagePhotoComponent } from './components/upload-village-photo/upload-village-photo.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FormToBeFilledComponent } from './components/form-to-be-filled/form-to-
     AddVillageComponent,
     UpdateVillageComponent,
     VillageStatusComponent,
-    FormToBeFilledComponent
+    FormToBeFilledComponent,
+    VillageFacilityComponent,
+    UploadVillagePhotoComponent
   ],
   imports: [
     CommonModule,

@@ -5,6 +5,7 @@ import { VillageComponent } from './components/village/village.component';
 import { AddVillageComponent } from '../villages/components/add-village/add-village.component';
 import { AgentProfileComponent } from './components/agent-profile/agent-profile.component';
 import { FormToBeFilledComponent } from '../villages/components/form-to-be-filled/form-to-be-filled.component';
+import { VillageFacilityComponent } from '../villages/components/village-facility/village-facility.component';
 
 const routes: Routes = [
   {
@@ -21,8 +22,8 @@ const routes: Routes = [
   },
   { path: 'agent-profile', component: AgentProfileComponent },
 {
-  path:'form-to-be-filled',
-  component:FormToBeFilledComponent
+  path:'village-facility',
+  component:VillageFacilityComponent
 },
   
 ];

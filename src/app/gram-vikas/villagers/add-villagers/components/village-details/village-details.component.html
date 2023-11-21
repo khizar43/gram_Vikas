@@ -56,11 +56,11 @@
         <!-- Village details -->
         <form class="ml-12">
             <div>
-                <p class="font-semibold  mt-3">Village Details</p>
+                <p class="font-semibold text-xl mt-3">Village Details</p>
             </div>
-            <div class="w-full  mt-8 flex">
-                <div class="w-6/12">
-                    <select class="" id="myDropdown" name="myDropdown">
+            <div class=" mt-8 flex ">
+                <div class="w-6/12 mr-4">
+                    <select class="border rounded-lg w-full h-10" id="myDropdown" name="myDropdown">
                         <option value="" disabled selected>State Name</option>
                         <option value="option1">Maharashtra</option>
                         <option value="option2">Andhra Pradesh</option>
@@ -68,8 +68,8 @@
                         <option value="option4">New Delhi</option>
                     </select>
                 </div>
-                <div class="w-6/12 mr-8">
-                    <select class="" id="myDropdown" name="myDropdown">
+                <div class="w-6/12 mr-8 ml-4">
+                    <select class="border rounded-lg w-full h-10" id="myDropdown" name="myDropdown">
                         <option value="" disabled selected>Grampanchayat Name</option>
                         <option value="option1">Kaneri</option>
                         <option value="option2">Ekondi</option>
@@ -79,16 +79,16 @@
 
             </div>
             <div class="w-full  mt-12 flex">
-                <div class="w-6/12">
-                    <select class="" id="myDropdown" name="myDropdown">
+                <div class="w-6/12 mr-4">
+                    <select class="border rounded-lg w-full h-10" id="myDropdown" name="myDropdown">
                         <option value="" disabled selected>Taluka Name</option>
                         <option value="option1">Kolhapur</option>
                         <option value="option2">Sangola</option>
                         <option value="option3">Karveer</option>
                     </select>
                 </div>
-                <div class=" w-6/12 mr-8">
-                    <select class="" id="myDropdown" name="myDropdown">
+                <div class=" w-6/12 mr-8 ml-4">
+                    <select class="border rounded-lg w-full h-10" id="myDropdown" name="myDropdown">
                         <option value="" disabled selected>District Name</option>
                         <option value="option1"></option>
                         <option value="option2">Kolhapur</option>
@@ -101,50 +101,92 @@
 
             </div>
         </form>
-        <div class="ml-12">
+        <div class="ml-12 mt-4">
             <div>
-                <p class="font-semibold  mt-3">Head of </p>
+                <p class="font-semibold text-xl mt-3">Head of Family </p>
             </div>
-            <div class="w-full  mt-8 flex">
-                <div class="w-6/12">
-                    <select class="" id="myDropdown" name="myDropdown">
-                        <option value="" disabled selected>State Name</option>
-                        <option value="option1">Maharashtra</option>
-                        <option value="option2">Andhra Pradesh</option>
-                        <option value="option3">Karnataka</option>
-                        <option value="option4">New Delhi</option>
+            <div class=" flex mt-4">
+                <div class="mr-8 w-6/12">
+                    <p class="flex-wrap text-gray-800 font-semibold">FullName</p>
+                    <span class="">
+                        <input placeholder="eg:Rajbeer " class="border rounded-lg w-full h-10 gap-2 mt-2">
+                    </span>
+                </div>
+                <div class="mr-8 w-6/12">
+                    <p class="flex-wrap text-gray-800 font-semibold">Gender</p>
+                    <select class="border rounded-lg h-10 gap-2 w-full mt-2" id="myDropdown" name="myDropdown">
+                        <option class="text-gray-200" value="" disabled selected>eg. Male/Female</option>
+                        <option value="option2">Male</option>
+                        <option value="option3">Female</option>
                     </select>
                 </div>
-                <div class="w-6/12 mr-8">
-                    <select class="" id="myDropdown" name="myDropdown">
-                        <option value="" disabled selected>Grampanchayat Name</option>
-                        <option value="option1">Kaneri</option>
-                        <option value="option2">Ekondi</option>
-                        <option value="option3">Kaneriwadi</option>
+            </div>
+            <div class=" w-full mt-12 flex">
+                <div class="mr-8 w-6/12">
+                    <p class="flex-wrap text-gray-800 font-semibold">Education</p>
+                    <select class="border rounded-lg h-10 gap-2 w-full mt-2" id="myDropdown" name="myDropdown">
+                        <option class="text-gray-200" value="" disabled selected>eg. 10th/12th/graduation</option>
+                        <option value="option2">10th</option>
+                        <option value="option3">12th</option>
+                        <option value="option3">Graduation</option>
                     </select>
                 </div>
+                <div class="mr-8 w-6/12">
+                    <p class="flex-wrap text-gray-800 font-semibold">Occupation</p>
+                    <select class="border rounded-lg h-10 gap-2 w-full mt-2" id="myDropdown" name="myDropdown">
+                        <option class="text-gray-200" value="" disabled selected>eg. Farmer</option>
+                        <option value="option2">Farmer</option>
+                        <option value="option3">Doctor</option>
+                        <option value="option3">Engineer</option>
+                    </select>
+                </div>
+            </div>
+            <div class=" w-full mt-12 flex">
+                <div class="mr-8 w-6/12">
+                    <p class="flex-wrap text-gray-800 font-semibold">Aadhaar Number</p>
+                    <span class="">
+                        <input placeholder="eg:886544556 " class="border rounded-lg w-full h-10 gap-2 mt-2">
+                    </span>
+                </div>
+                <div class="mr-8 w-6/12">
+                    <p class="flex-wrap text-gray-800 font-semibold">Bank Account Type</p>
+                    <select class="border rounded-lg h-10 gap-2 w-full mt-2" id="myDropdown" name="myDropdown">
+                        <option class="text-gray-200" value="" disabled selected>eg. Saving/Current</option>
+                        <option value="option2">Saving</option>
+                        <option value="option3">Current</option>
+                    </select>
+                </div>
+            </div>
 
-            </div>
-            <div class="w-full  mt-12 flex">
-                <div class="w-6/12">
-                    <select class="" id="myDropdown" name="myDropdown">
-                        <option value="" disabled selected>Taluka Name</option>
-                        <option value="option1">Kolhapur</option>
-                        <option value="option2">Sangola</option>
-                        <option value="option3">Karveer</option>
-                        <!-- <option value="option4">New Delhi</option> -->
-                    </select>
+            <div class="mt-4">
+                <p class="flex-wrap text-gray-800 font-semibold">Job-card</p>
+                <div class="flex mt-2">
+                    <div class="flex items-center me-4">
+                        <input id="inline-checkbox" type="checkbox" value=""
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+
+                        <label for="inline-checkbox"
+                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                    </div>
+
+                    <div class="flex items-center me-4">
+                        <input id="inline-2-checkbox" type="checkbox" value=""
+                            class="w-4 h-4 text-blue-600 bg-green-400 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-green-800 focus:ring-2 dark:bg-green-700 dark:border-gray-600">
+
+                        <label for="inline-2-checkbox"
+                            class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                    </div>
                 </div>
-                <div class=" w-6/12 mr-8">
-                    <select class="" id="myDropdown" name="myDropdown">
-                        <option value="" disabled selected>District Name</option>
-                        <option value="option1"></option>
-                        <option value="option2">Kolhapur</option>
-                        <option value="option3">Pune</option>
-                        <option value="option4">Satara</option>
-                    </select>
-                </div>
             </div>
+
         </div>
+
+    </div>
+    <div class=" mt-6 w-full h-[5rem] flex space-x-6 bg-white border-t-2 justify-center">
+
+        <div class="progress-bar ml-6 mt-6" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+        </div>
+        <button class="w-7/12 bg-green-800 text-white mt-3 rounded-md">Proceed</button>
     </div>
 </div>
+

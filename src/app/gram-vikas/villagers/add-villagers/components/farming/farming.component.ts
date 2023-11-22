@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class FarmingComponent {
 
+
+showFormData:boolean = false;
+
+
+ 
+formDataVisibility() {
+  this.showFormData = !this.showFormData;
+}
+
+
 }

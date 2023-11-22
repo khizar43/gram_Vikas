@@ -63,17 +63,17 @@
 
             </div>
             <div class="flex space-x-4 mt-4">
-                <button class="px-4 py-1 border-[#EAECF0] rounded-lg border text-[#667085]text-[1rem] shadow-sm">
+                <button class="px-4 py-1 border-[#EAECF0] rounded-lg border text-[#667085]text-[1rem] shadow-sm" (click)="formDataVisibility()">
                     Yes
                 </button>
                 <button
-                    class="px-4 py-1 border-[#EAECF0] rounded-lg border text-[1rem] bg-[#046A38] text-white shadow-sm">
+                    class="px-4 py-1 border-[#EAECF0] rounded-lg border text-[1rem] bg-[#046A38] text-white shadow-sm" (click)="formDataVisibility()">
                     No
                 </button>
             </div>
         </div>
         <!-- form started -->
-        <form class=" mt-9 w-full">
+        <form class=" mt-9 w-full" *ngIf="showFormData">
 
             <div class="mt-9 space-y-9">
                 <div class="flex  space-x-9">
@@ -292,7 +292,7 @@
 
 </div>
 <!-- footer -->
-<footer class=" body-font bottom-0  h-fit  bg-white sticky">
+<footer class=" body-font  h-fit  bg-white  sticky bottom-0 mb-0">
     <div
         class=" flex md:items-center lg:items-center lg:justify-center   md:flex-row md:flex-nowrap flex-wrap flex-col">
 

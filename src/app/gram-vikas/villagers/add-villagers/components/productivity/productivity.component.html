@@ -1,1 +1,252 @@
-<p>productivity works!</p>
+<!-- start  -->
+<div class="bg-[#F8F9FC] py-4 lg:px-24">
+    <div class=" px-8 flex items-center">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 19L5 12L12 5" stroke="#1D2939" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <p class="ml-2 text-[#1D2939] font-medium text-[1.5rem]">Add New Village</p>
+    </div>
+    <div class="px-16">
+        <div class="mt-8 w-auto  h-auto rounded-md"
+            style="background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%)">
+            <div class="ml-2 pt-3 flex pb-3">
+                <div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.5 10C0.5 4.7533 4.7533 0.5 10 0.5H30C35.2467 0.5 39.5 4.7533 39.5 10V30C39.5 35.2467 35.2467 39.5 30 39.5H10C4.7533 39.5 0.5 35.2467 0.5 30V10Z"
+                            stroke="white" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8.82149 8.82165C8.33334 9.30981 8.33334 10.0955 8.33334 11.6668V28.3335C8.33334 31.4762 8.33334 33.0475 9.30966 34.0238C9.85398 34.5682 10.5832 34.809 11.6667 34.9157V32.5002C11.6667 31.1195 12.786 30.0002 14.1667 30.0002C15.5474 30.0002 16.6667 31.1195 16.6667 32.5002V35.0002H23.3333V32.5002C23.3333 31.1195 24.4527 30.0002 25.8333 30.0002C27.214 30.0002 28.3333 31.1195 28.3333 32.5002V34.9157C29.4168 34.809 30.146 34.5682 30.6903 34.0238C31.6667 33.0475 31.6667 31.4762 31.6667 28.3335V11.6668C31.6667 10.0955 31.6667 9.30981 31.1785 8.82165C30.6903 8.3335 29.9047 8.3335 28.3333 8.3335H11.6667C10.0953 8.3335 9.30966 8.3335 8.82149 8.82165Z"
+                            fill="white" />
+                        <path d="M14.1667 15.8335H25.8333" stroke="#98A2B3" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M14.1667 20.8335H20.8333" stroke="#98A2B3" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M14.1667 25.8335H24.1667" stroke="#98A2B3" stroke-width="2.5" stroke-linecap="round" />
+                        <path
+                            d="M26.6667 32.4998C26.6667 32.0397 26.2935 31.6665 25.8333 31.6665C25.3732 31.6665 25 32.0397 25 32.4998H26.6667ZM25 32.4998V34.9998H26.6667V32.4998H25Z"
+                            fill="#344054" />
+                        <path
+                            d="M15 32.4998C15 32.0397 14.6269 31.6665 14.1667 31.6665C13.7064 31.6665 13.3333 32.0397 13.3333 32.4998H15ZM13.3333 32.4998V34.9998H15V32.4998H13.3333Z"
+                            fill="#344054" />
+                    </svg>
+                </div>
+
+                <div class="px-2  w-full">
+                    <div class="flex justify-between px-2  w-full">
+                        <p class="text-white">Request For Form Update</p>
+                        <div class="">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="ml-2 mt-3">
+                        <p class="text-white text-xs">
+                            You have the option to make a formal request to your manager,
+                            seeking approval for adding or removing data fields from the form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div >
+            <div>
+                <p class=" font-medium text-[1.5rem] text-[#1D2939] mt-3">Productivity</p>
+            </div>
+            <div class="mt-9 ">
+                <p class="text-[#1D2939]  font-medium text-[1rem]">Do you do live stocks?</p>
+
+            </div>
+            <div class="flex space-x-4 mt-4">
+                <button class="px-4 py-1 border-[#EAECF0] rounded-lg border text-[#667085]text-[1rem] shadow-sm" (click)="formDataVisibility()">
+                    Yes
+                </button>
+                <button
+                    class="px-4 py-1 border-[#EAECF0] rounded-lg border text-[1rem] bg-[#046A38] text-white shadow-sm" (click)="formDataVisibility()">
+                    No
+                </button>
+            </div>
+        </div>
+        <!-- form started -->
+        <form class=" mt-9 w-full" *ngIf="showformData">
+
+            <div class="mt-9 space-y-9">
+                <div class="flex  space-x-9">
+                    <div class="w-full ">
+                        <p class=" text-gray-700 font-semibold font-Jost">Cow Milk
+                        </p>
+                        <input formControlName="eg : 4325"
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            type="text" placeholder="eg : 4325">
+
+                    </div>
+
+                    <div class="w-full ">
+                        <p class=" text-gray-700 font-semibold font-Jost">Buffalo Milk
+                        </p>
+                        <input formControlName="eg : 4325"
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            type="text" placeholder="eg : 4325">
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex  space-x-9">
+                    <div class="w-full ">
+                        <p class=" text-gray-700 font-semibold font-Jost">Consumption of cow milk
+                        </p>
+                        <input formControlName=""
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            type="text" placeholder="eg : 4325 ">
+
+                    </div>
+                    <div class="w-full ml-1 pr-2 ">
+                        <p class="text-gray-700 font-semibold font-Jost">Consumption of buffalo milk</p>
+                        <input formControlName=""
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            type="text" placeholder="eg : 4325 ">
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex  space-x-9">
+                    <div class="w-full ">
+                        <p class=" text-gray-700 font-semibold font-Jost">Salse cost of cow milk
+                        </p>
+                        <input formControlName=""
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            type="text" placeholder="eg : 4325 ">
+
+                    </div>
+                    <div class="w-full ml-1 pr-2 ">
+                        <p class="text-gray-700 font-semibold font-Jost">Salse cost of buffalo milk</p>
+                        <input formControlName=""
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            type="text" placeholder="eg : 4325 ">
+
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex  space-x-9">
+                    <div class="w-full ml-1 pr-2 ">
+                        <p class="text-gray-700 font-semibold font-Jost">Farming Type</p>
+
+                        <select formControlName="" placeholder=" "
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-2">
+                            <option class=" default-option" value="" disabled selected hidden>eg : Organic/Inorganic
+                            </option>
+                            <option class="text-gray-400">Wheat</option>
+                            <option>Cron</option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+
+                    <div class="w-full ml-1 pr-2 ">
+                        <p class="text-gray-700 font-semibold font-Jost">Dairy products you make?</p>
+
+                        <select formControlName="" placeholder=" "
+                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-2">
+                            <option class=" default-option" value="" disabled selected hidden>
+                            </option>
+                            <option class="text-gray-400">Wheat</option>
+                            <option>Cron</option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+
+                </div>
+                <!--  -->
+                <div class="flex  space-x-9">
+
+                    <div class="w-full ">
+                        <label class=" text-gray-700 font-semibold font-Jost">Want training on dairy products
+                        </label>
+                        <div class="flex space-x-9 mt-2 items-center ">
+                            <div class="space-x-4 flex ">
+                                <input type="checkbox" class="w-6 h-6 border-gary-200 rounded ">
+                                <label for="" class="text-[#1D2939] ">Yes</label>
+                            </div>
+                            <div class="space-x-4 flex ">
+                                <input type="checkbox" class="w-6 h-6 border-[#667085] border-4 rounded-xl ">
+                                <label for="" class="text-[#1D2939] ">No</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<!-- footer -->
+<footer class=" body-font bottom-0  h-fit  bg-white sticky">
+    <div
+        class=" flex md:items-center lg:items-center lg:justify-center   md:flex-row md:flex-nowrap flex-wrap flex-col">
+
+        <div class="my-9 md:mx-16  flex items-center  space-x-6 flex-shrink-0 ">
+            <!-- progress bar -->
+            <div>
+                <div class="relative w-20 h-16">
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <!-- Background circle -->
+                        <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                            fill="transparent"></circle>
+                        <!-- Progress circle -->
+                        <circle class="text-[#046A38]  progress-ring__circle stroke-current" stroke-width="10"
+                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                            stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
+
+                        <!-- Center text -->
+                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                            alignment-baseline="middle">70%</text>
+
+                    </svg>
+                </div>
+                <p class="text-[#475467] font-medium">Progress</p>
+            </div>
+            <div class="">
+                <button
+                    class="flex  rounded-lg w-64 py-3 items-center justify-center space-x-2 border-[#046A38] border-2">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12H5.5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12.5 19L5.5 12L12.5 5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p class="text-[#046A38]">Previous</p>
+                </button>
+            </div>
+            <div class="">
+                <button
+                    class="flex border rounded-lg w-64 py-3 bg-[#14644A] items-center justify-center space-x-2 text-white">
+
+                    <p class="text-white ">Proceed</p>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- end  -->

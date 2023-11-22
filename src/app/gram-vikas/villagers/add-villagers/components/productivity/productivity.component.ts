@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ProductivityComponent {
 
+
+  showformData: boolean = false;
+
+ 
+ formDataVisibility() {
+    this.showformData = !this.showformData;
+  }
+
 }

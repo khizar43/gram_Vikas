@@ -1,17 +1,15 @@
-<div class="bg-[#FCFCFD] mx-2">
-  <div class=" mt-4 ml-4 flex ">
-    <div routerLink="/dashboard/add-village">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M19 12H5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M12 19L5 12L12 5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      </svg>
-    </div>
-    <p class="ml-2 font-semibold">Add New Village</p>
+<div class="h-screen">
+  <div class=" text-[#1D2939] mt-4 mx-4 flex ">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 12H5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12 19L5 12L12 5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+    <p class="ml-2 text-[#1D2939] text-2xl">Add New Family</p>
   </div>
   <div>
     <div class="mt-8 w-auto ml-12 mr-8 h-auto rounded-md"
       style="background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%)">
-      <div class="ml-2 pt-3 flex pb-3">
+      <div class="mx-2 pt-3 flex pb-3">
         <div>
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -31,10 +29,11 @@
               fill="#344054" />
           </svg>
         </div>
+
         <div class="ml-4">
-          <div class="flex">
-            <p class="text-white">Request For Form Update</p>
-            <div class="ml-48">
+          <div class="flex justify-between">
+            <p class="text-[#FFF] text-xl">Request For Form Update</p>
+            <div class="">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" />
@@ -42,7 +41,7 @@
             </div>
           </div>
           <div class="mr-4 mt-3">
-            <p class="text-white text-xs">
+            <p class="text-[#F2F4F7] text-xs">
               You have the option to make a formal request to your manager,
               seeking approval for adding or removing data fields from the form.
             </p>
@@ -50,145 +49,186 @@
         </div>
       </div>
     </div>
-    <!-- Family detail -->
-    <form class="ml-12">
+    <form class="mx-5 md:mx-48">
       <div>
-        <p class="font-semibold text-xl mt-5">Family Details</p>
+        <p class="font-semibold text-[#1D2939] text-2xl mt-4 ">Family Details</p>
       </div>
-      <div class="w-full space-x-2  mt-9 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">Male Count</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">Female Count</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-      </div>
-      <div class=" w-full space-x-2  mt-12 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">Boy Count</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-        <div class=" w-6/12 ">
-          <p class="font-semibold">Girl Count</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
 
-      </div>
-      <div class=" w-full space-x-2  mt-12 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">High-School pass out</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] font-medium text-md">Male Count</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg.432">
         </div>
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">10th pass out</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-      </div>
-      <div class=" w-full space-x-2  mt-12 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">12th pass out</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">Graduates</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
+        <div class="w-full">
+          <p class="text-[#1D2939] font-medium text-md">Female Count</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg.425">
         </div>
       </div>
-      <div class=" w-full space-x-2  mt-12 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">Post Graduates</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">Agriculture Area</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-      </div>
-      <div class=" w-full space-x-2  mt-12 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">Non-Agriculture Area</p>
-          <input class="w-4/5 border-2 bg-white border rounded-lg h-10" placeholder="eg:435">
-        </div>
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">Water supply Source</p>
-          <select class="w-4/5 border-2 bg-white border rounded-lg h-10" id="myDropdown" name="myDropdown">
-            <option class="text-gray-300" value="" selected>eg.River</option>
-            <option class="" value="" selected>Well</option>
-            <option class="" value="" selected>Canal</option>
 
-          </select>
+
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] font-medium text-md">Boy Count</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg.432">
+        </div>
+        <div class="w-full">
+          <p class="text-[#1D2939] font-medium text-md">Girl Count</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg.425">
         </div>
       </div>
-      <div class=" w-full space-x-2  mt-12 flex">
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">Water supply Institute</p>
-          <select class=" w-4/5 border-2 bg-white border rounded-lg h-10" id="myDropdown" name="myDropdown">
-            <option class="text-gray-300" value="" selected>eg.Vitthal water supply </option>
-          </select>
+
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] font-medium text-md">High-School pass out</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg. 4">
         </div>
-        <div class=" w-6/12 mr-8">
-          <p class="font-semibold">Interest in skill development</p>
-          <div class="flex items-center mb-4 mt-2">
-            <div class="w-1/3 flex space-x-2">
-              <input id="default-checkbox" type="checkbox" value=""
-                class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-              <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
-            </div>
-            <div class="w-1/3 flex space-x-2">
-              <input id="default-checkbox" type="checkbox" value=""
-                class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-              <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
-            </div>
+        <div class="w-full">
+          <p class="text-[#1D2939] font-medium text-md">10th pass out</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg. 4">
+        </div>
+      </div>
+
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] font-medium text-md">12th pass out</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg.325">
+        </div>
+        <div class="w-full">
+          <p class="text-[#1D2939] font-medium text-md">Graduates</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg.4">
+        </div>
+      </div>
+
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] font-medium text-md">Post Graduates</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg. 425">
+        </div>
+        <div class="w-full">
+          <p class="text-[#1D2939] font-medium text-md">Agriculture Area</p>
+          <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg. 2">
+        </div>
+      </div>
+
+
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <div class="w-full">
+            <p class="text-[#1D2939] font-medium text-md">Non-Agriculture Area</p>
+            <input class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800" placeholder="eg. 2">
           </div>
         </div>
+        <div class="w-full">
+          <p class="text-[#1D2939] text-md font-medium">Water Supply Source</p>
+          <select class="border rounded-lg w-full h-10 pl-2">
+            <option>River</option>
+          </select>
+        </div>
       </div>
-      <div class=" w-full space-x-2  mt-9 flex">
-        <div class="w-6/12">
-          <p class="font-semibold">Own Business </p>
-          <div class="flex items-center mb-4 mt-2">
-            <div class="w-1/3 flex space-x-2">
-              <input id="default-checkbox" type="checkbox" value=""
-                class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-              <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <div class="w-full">
+            <p class="text-[#1D2939] font-medium text-md">Water Supply Institute</p>
+            <select class="border rounded-lg w-full h-10 pl-2">
+              <option>eg. Vitthal water supply</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] text-md font-medium ml-2">
+            Interest in skill development
+          </p>
+          <div class="flex mt-2 ml-2">
+            <div class="flex items-center me-4">
+              <input id="inline-checkbox" type="checkbox" value=""
+                class="w-6 h-6 text-green-500 bg-gray-100 border-gray-300 rounded focus:ring-green-800 dark:focus:ring-green-800 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
             </div>
-            <div class="w-1/3 flex space-x-2">
-              <input id="default-checkbox" type="checkbox" value=""
-                class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-              <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+            <div class="flex items-center me-4">
+              <input id="inline-2-checkbox" type="checkbox" value=""
+                class="w-6 h-6 text-green-800 bg-green-500 border-gray-300 rounded focus:ring-green-800 dark:focus:ring-green-800 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="inline-2-checkbox"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="w-full mt-8 flex flex-col md:flex-row">
+        <div class="mb-4 md:mr-4 w-full lg:mr-16">
+          <p class="text-[#1D2939] text-md font-medium ml-2">
+            Own Business
+          </p>
+          <div class="flex mt-2 ml-2">
+            <div class="flex items-center me-4">
+              <input id="inline-checkbox" type="checkbox" value=""
+                class="w-6 h-6 text-green-500 bg-gray-100 border-gray-300 rounded focus:ring-green-800 dark:focus:ring-green-800 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+            </div>
+            <div class="flex items-center me-4">
+              <input id="inline-2-checkbox" type="checkbox" value=""
+                class="w-6 h-6 text-green-800 bg-green-500 border-gray-300 rounded focus:ring-green-800 dark:focus:ring-green-800 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+              <label for="inline-2-checkbox"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
             </div>
           </div>
         </div>
       </div>
     </form>
   </div>
-  <!-- Progress Bar -->
-  <div class="w-full h-[5rem] flex space-x-6 mt-5 bg-white border-t-2 justify-center">
-    <div class="progress-bar  mt-3" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-    <div class="flex w-8/12 space-x-4">
-      <button class="w-6/12 border-green-600 border-4   h-3/5 text-green-700 mt-3 rounded-md" routerLink="/villagers">
-        <div class="flex justify-center space-x-2">
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M19.1841 12.3419H5.18408" stroke="#046A38" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M12.1841 19.3419L5.18408 12.3419L12.1841 5.34192" stroke="#046A38" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-          <p>Previous</p>
+  <footer class=" body-font mt- h-fit  bg-white  sticky bottom-0 mb-0">
+    <div
+        class=" flex md:items-center lg:items-center lg:justify-center   md:flex-row md:flex-nowrap flex-wrap flex-col">
+
+        <div class="my-9 md:mx-16  flex items-center  space-x-6 flex-shrink-0 ">
+            <!-- progress bar -->
+            <div>
+                <div class="relative w-20 h-16">
+                    <svg class="w-full h-full" viewBox="0 0 100 100">
+                        <!-- Background circle -->
+                        <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                            fill="transparent"></circle>
+                        <!-- Progress circle -->
+                        <circle class="text-[#046A38]  progress-ring__circle stroke-current" stroke-width="10"
+                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                            stroke-dashoffset="calc(400 - (400 * 15) / 100)"></circle>
+
+                        <!-- Center text -->
+                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                            alignment-baseline="middle">15%</text>
+
+                    </svg>
+                </div>
+                <p class="text-[#475467] font-medium">Progress</p>
+            </div>
+            <div class="">
+                <button routerLink="/villagers"
+                    class="flex  rounded-lg w-64 py-3 items-center justify-center space-x-2 border-[#046A38] border-2">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.5 12H5.5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12.5 19L5.5 12L12.5 5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <p class="text-[#046A38]">Previous</p>
+                </button>
+            </div>
+            <div class="">
+                <button routerLink="/villagers/farming"
+                    class="flex border rounded-lg w-64 py-3 bg-[#14644A] items-center justify-center space-x-2 text-white">
+
+                    <p class="text-white ">Proceed</p>
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </button>
+            </div>
         </div>
-      </button>
-      <button class="w-6/12 bg-green-800 h-3/5 text-white mt-3 rounded-md">
-        <div class="flex justify-center space-x-2">
-          <p>Proceed</p>
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.18408 12.3419H19.1841" stroke="white" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M12.1841 5.34192L19.1841 12.3419L12.1841 19.3419" stroke="white" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </div>
-      </button>
     </div>
-  </div>
-</div>
+
+</footer>

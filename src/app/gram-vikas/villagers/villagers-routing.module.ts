@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'addvillagers',
+    path: '',
     loadChildren: () => import('./add-villagers/add-villagers.module').then(m => m.AddVillagersModule),
   },
 ];

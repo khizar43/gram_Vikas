@@ -19,7 +19,6 @@ const routes: Routes = [
   { path: 'family-member-details', component: FamilyMemberDetailsComponent },
   { path: 'family-profile', component: FamilyProfileComponent },
 
-
 ];
 
 @NgModule({

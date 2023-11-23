@@ -7,6 +7,7 @@ import { AgentProfileComponent } from './components/agent-profile/agent-profile.
 import { FormToBeFilledComponent } from '../villages/components/form-to-be-filled/form-to-be-filled.component';
 import { VillageFacilityComponent } from '../villages/components/village-facility/village-facility.component';
 import { UploadVillagePhotoComponent } from '../villages/components/upload-village-photo/upload-village-photo.component';
+import { VillageStatusComponent } from '../villages/components/village-status/village-status.component';
 
 const routes: Routes = [
   {
@@ -29,7 +30,8 @@ const routes: Routes = [
 {
   path:'upload-village-photo',
   component:UploadVillagePhotoComponent
-},
+  },
+  
   
 ];
 

@@ -18,7 +18,9 @@ const routes: Routes = [
     path: 'add-village',
     component: AddVillageComponent,
   },
-  
+  {
+    path: 'status', component:VillageStatusComponent,
+  }
 
 
 ];

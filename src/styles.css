@@ -23,3 +23,7 @@
    
 }
 
+body{
+  background: var(--gray-blue-50, #F8F9FC);
+}
+

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { VillagersStatusComponent } from './components/villagers-status/villagers-status.component';
 
 
 const routes: Routes = [
@@ -7,6 +8,9 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./add-villagers/add-villagers.module').then(m => m.AddVillagersModule),
   },
+  {
+    path: 'villagers-status', component: VillagersStatusComponent 
+  }
 ];
 
 @NgModule({

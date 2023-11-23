@@ -27,3 +27,13 @@
         transform-origin: 50% 50%;
       }
     
+      /* Yes or No buttons  */
+      .active {
+        background-color: #046A38; /* Change the color as needed */
+        color: white;
+      }
+      
+      .inactive {
+        background-color: #046A38; /* Change the color as needed */
+        color: white;
+      }

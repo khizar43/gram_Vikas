@@ -13,6 +13,10 @@ export class HomeService {
   get_villages_count() {
     return this._http.get(this.village + '/villages')
   }
+  get_families_count() {
+    return this._http.get(this.village + '/families')
+  }
+
 
 }
 

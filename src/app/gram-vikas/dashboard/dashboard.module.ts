@@ -8,10 +8,8 @@ import { VillageComponent } from './components/village/village.component';
 import { NotificationComponent } from './components/notification/notification.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
 import { DashboardSummaryComponent } from './dashboard-summary/components/dashboard-summary/dashboard-summary.component';
-FooterComponent
-
-
-
+import { FormsModule } from '@angular/forms';
+FooterComponent;
 
 @NgModule({
   declarations: [
@@ -20,15 +18,8 @@ FooterComponent
     VillageComponent,
     NotificationComponent,
     FooterComponent,
-    DashboardSummaryComponent
-
-
-
+    DashboardSummaryComponent,
   ],
-  imports: [
-    CommonModule,
-    DashboardRoutingModule,
-
-  ]
+  imports: [CommonModule, DashboardRoutingModule, FormsModule],
 })
 export class DashboardModule { }

@@ -60,13 +60,16 @@ export class DashboardSummaryComponent implements OnInit {
 
 
   //14. Constructor - Mandatory
-  constructor(private _ser: DashboardSummaryService) { }
-  count: any
+  constructor(private _dashboard_ser: DashboardSummaryService) { }
+  data_count: any
   get_count() {
-    this._ser.get_counts_service().subscribe((res) => {
-      this.count = res
-      console.log("========>", this.count)
-    })
+    // Subscribe to the observable returned by the get_villages_count() method
+    this._dashboard_ser.get_count().subscribe((res) => {
+      // Store the response data in the data_villages variable
+      this.data_count = res;
+      // Log the value of data_villages to the console
+      console.log("Count ======>>", this.data_count);
+    });
   }
 
 

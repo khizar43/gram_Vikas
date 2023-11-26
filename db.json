@@ -1,99 +1,189 @@
 {
-    "count": {
-        "villages": 435,
-        "families": 1234,
-        "population": 24354
+  "count": [
+    {
+      "villages": "435",
+      "families": "1,234",
+      "population": "24,345"
+    }
+  ],
+  "villages": [
+    {
+      "id": 1,
+      "name": "Karegaon",
+      "status": "Published",
+      "state": "Maharashtra",
+      "District": "Ahmednagar",
+      "population": 3421,
+      "families": 322,
+      "area": "830H"
     },
-    "villages": [
-        {
-            "id": 1,
-            "name": "Karegaon",
-            "status":"Published",
-            "state": "Maharashtra",
-            "District": "Ahmednagar",
-            "population": 3421,
-            "families": 322,
-            "area": "830H"
-        },
-        {
-            "id": 2,
-            "name": "Bordi",
-            "status":"Not Published",
-            "state": "Maharashtra",
-            "District": "Akola",
-            "population": 3421,
-            "families": 322,
-            "area": "830H"
-        },
-        {
-            "id": 3,
-            "name": "Kaneri",
-            "status":"Published",
-            "state": "Maharashtra",
-            "District": "Kolhapur",
-            "population": 3421,
-            "families": 322,
-            "area": "830H"
-        },
-        {
-            "id": 4,
-            "name": "Kaneriwadi",
-            "status":"Published",
-            "state": "Maharashtra",
-            "District": "Kolhapur",
-            "population": 4421,
-            "families": 322,
-            "area": "830H"
-        },
-        {
-            "id": 5,
-            "name": "Haneriwadi",
-            "status":"Published",
-            "state": "Maharashtra",
-            "District": "Kolhapur",
-            "population": 3421,
-            "families": 855,
-            "area": "830H"
-        },
-        {
-            "id": 6,
-            "name": "scneriwadi",
-            "status":"Not Published",
-            "state": "Maharashtra",
-            "District": "Kolhapur",
-            "population": 2421,
-            "families": 755,
-            "area": "830H"
-        },
-        {
-            "id": 7,
-            "name": "Daneriwadi",
-            "status":"Published",
-            "state": "Maharashtra",
-            "District": "Kolhapur",
-            "population": 3821,
-            "families": 366,
-            "area": "730H"
-        },
-        {
-            "id": 8,
-            "name": "Btneriwadi",
-            "status":"Not Published",
-            "state": "Maharashtra",
-            "District": "Kolhapur",
-            "population": 4821,
-            "families": 576,
-            "area": "530H"
-        }
-
-    ],
-
-    "families":[
-        {
-            "id":1,
-            "name":""
-
-        }
-
-    ]
+    {
+      "id": 2,
+      "name": "Bordi",
+      "status": "Not Published",
+      "state": "Maharashtra",
+      "District": "Akola",
+      "population": 3421,
+      "families": 322,
+      "area": "830H"
+    },
+    {
+      "id": 3,
+      "name": "Kaneri",
+      "status": "Published",
+      "state": "Maharashtra",
+      "District": "Kolhapur",
+      "population": 3421,
+      "families": 322,
+      "area": "830H"
+    },
+    {
+      "id": 4,
+      "name": "Kaneriwadi",
+      "status": "Published",
+      "state": "Maharashtra",
+      "District": "Kolhapur",
+      "population": 4421,
+      "families": 322,
+      "area": "830H"
+    },
+    {
+      "id": 5,
+      "name": "Haneriwadi",
+      "status": "Published",
+      "state": "Maharashtra",
+      "District": "Kolhapur",
+      "population": 3421,
+      "families": 855,
+      "area": "830H"
+    },
+    {
+      "id": 6,
+      "name": "scneriwadi",
+      "status": "Not Published",
+      "state": "Maharashtra",
+      "District": "Kolhapur",
+      "population": 2421,
+      "families": 755,
+      "area": "830H"
+    },
+    {
+      "id": 7,
+      "name": "Daneriwadi",
+      "status": "Published",
+      "state": "Maharashtra",
+      "District": "Kolhapur",
+      "population": 3821,
+      "families": 366,
+      "area": "730H"
+    },
+    {
+      "id": 8,
+      "name": "Btneriwadi",
+      "status": "Not Published",
+      "state": "Maharashtra",
+      "District": "Kolhapur",
+      "population": 4821,
+      "families": 576,
+      "area": "530H"
+    }
+  ],
+  "families": [
+    {
+      "id": 1,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Rajbeer",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Karagaon",
+      "person_occupation": "Farming",
+      "Members": 5,
+      "Females": 2,
+      "Males": 3
+    },
+    {
+      "id": 2,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Mahesh",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Bherdapur",
+      "person_occupation": "Farming",
+      "Members": 6,
+      "Females": 2,
+      "Males": 4
+    },
+    {
+      "id": 3,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Ramjesh",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Dhanodi",
+      "person_occupation": "Business",
+      "Members": 4,
+      "Females": 2,
+      "Males": 2
+    },
+    {
+      "id": 4,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Kamljeet",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Zole",
+      "person_occupation": "Service",
+      "Members": 7,
+      "Females": 4,
+      "Males": 3
+    },
+    {
+      "id": 5,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": " Ramotar",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Chowa",
+      "person_occupation": "Shopkeeper",
+      "Members": 5,
+      "Females": 2,
+      "Males": 3
+    },
+    {
+      "id": 6,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Sunil Datt",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Karagaon",
+      "person_occupation": "Car-painter",
+      "Members": 6,
+      "Females": 2,
+      "Males": 4
+    },
+    {
+      "id": 7,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Savita",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Kakodi",
+      "person_occupation": "Farming",
+      "Members": 4,
+      "Females": 2,
+      "Males": 2
+    },
+    {
+      "id": 8,
+      "photo": "https://picsum.photos/200/300",
+      "person_name": "Kartik",
+      "person_position": "HOF",
+      "person_status": "Published",
+      "person_village": "Sawangi",
+      "person_occupation": "Farming",
+      "Members": 5,
+      "Females": 2,
+      "Males": 3
+    }
+  ]
 }

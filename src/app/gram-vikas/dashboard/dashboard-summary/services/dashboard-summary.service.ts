@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 export class DashboardSummaryService {
   data_count = environment.dashboard
   constructor(private _http: HttpClient) { }
-  get_counts_service() {
+  get_count() {
     return this._http.get(this.data_count + '/count')
   }
 }

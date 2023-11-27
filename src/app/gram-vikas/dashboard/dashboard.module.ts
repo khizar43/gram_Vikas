@@ -9,6 +9,7 @@ import { NotificationComponent } from './components/notification/notification.co
 import { FooterComponent } from '../shared/components/footer/footer.component';
 import { DashboardSummaryComponent } from './dashboard-summary/components/dashboard-summary/dashboard-summary.component';
 import { FormsModule } from '@angular/forms';
+import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-be-filled.component';
 FooterComponent;
 
 @NgModule({
@@ -19,6 +20,7 @@ FooterComponent;
     NotificationComponent,
     FooterComponent,
     DashboardSummaryComponent,
+    FormToBeFilledComponent,
   ],
   imports: [CommonModule, DashboardRoutingModule, FormsModule],
 })

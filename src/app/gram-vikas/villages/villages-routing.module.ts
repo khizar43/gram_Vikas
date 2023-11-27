@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddVillageComponent } from './components/add-village/add-village.component';
 import { VillageDashboardComponent } from './components/village-dashboard/village-dashboard.component';
-import { FormToBeFilledComponent } from './components/form-to-be-filled/form-to-be-filled.component';
 import { VillageStatusComponent } from './components/village-status/village-status.component';
 
 const routes: Routes = [

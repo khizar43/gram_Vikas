@@ -4,11 +4,10 @@ import { HomeComponent } from './components/home/home.component';
 import { VillageComponent } from './components/village/village.component';
 import { AddVillageComponent } from '../villages/components/add-village/add-village.component';
 import { AgentProfileComponent } from './components/agent-profile/agent-profile.component';
-import { FormToBeFilledComponent } from '../villages/components/form-to-be-filled/form-to-be-filled.component';
 import { VillageFacilityComponent } from '../villages/components/village-facility/village-facility.component';
 import { UploadVillagePhotoComponent } from '../villages/components/upload-village-photo/upload-village-photo.component';
-import { VillageStatusComponent } from '../villages/components/village-status/village-status.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-be-filled.component';
 
 const routes: Routes = [
   {
@@ -36,7 +35,10 @@ const routes: Routes = [
     path:'notification',
     component:NotificationComponent
   },
-  
+  {
+    path:'form-to-be-filled',
+    component:FormToBeFilledComponent
+  }
 ];
 
 @NgModule({

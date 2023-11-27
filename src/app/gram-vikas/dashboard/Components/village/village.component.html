@@ -1,223 +1,178 @@
 <!-- Start -->
 <div class="overflow-hidden border-6 p-4 bg-[#FFF]">
-    <!-- Search Bar -->
-    <div class="py-8 space-y-10">
-        <div class="">
-            <div class="relative grid mx-4 -mb-10">
-                <img src="../assets/icons/Search.svg" alt="Search Logo" />
-            </div>
-            <input type="text" placeholder="Search For Village /  District /Taluka  "
-                class="rounded-lg w-full pl-14 py-3 text-gray-600 outline-none shadow-md" />
-        </div>
+  <!-- Search Bar -->
+  <div class="py-8 space-y-10">
+    <div class="">
+      <div class="relative grid mx-4 -mb-10">
+        <img src="../assets/icons/Search.svg" alt="Search Logo" />
+      </div>
+      <input type="text" placeholder="Search For Village /  District /Taluka  "
+        class="rounded-lg w-full pl-14 py-3 text-gray-600 outline-none shadow-md" />
     </div>
-    <!-- Card's Of Villages,Families And Population -->
-    <div>
-        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
-              <!-- Population Card -->
-            <div class="border-1 rounded-lg shadow-md p-3">
-                <div class="flex flex-row justify-between items-stretch">
-                    <button class="text-[#06038D] text-[1.5rem] font font-semibold">
-                        <!-- {{ Counts.population }} -->4242
-                    </button>
-                    <img src="../assets/icons/users.svg" alt="Logo" />
-                </div>
-                <button class="text-[#475467] font-medium font text-[1rem]">
-                    Population
-                </button>
-            </div>
-            <!-- Villages Card -->
-            <div class="border-1 rounded-lg shadow-md p-3">
-                <div class="flex flex-row justify-between items-stretch">
-                    <button class="text-[#046A38] text-[1.5rem] font font-semibold">
-                        <!-- {{ Counts.villages }} -->2125
-                    </button>
-                    <img src="../assets/icons/tuscany-plaza_.svg" alt="Logo" />
-                </div>
-                <button class="text-[#475467] font-medium font text-[1rem]">
-                    Villages
-                </button>
-            </div>
-            <!-- Families Card -->
-            <div class="border-1 rounded-lg shadow-md p-3">
-                <div class="flex flex-row justify-between items-stretch">
-                    <button class="text-[#FF671F] text-[1.5rem] font font-semibold">
-                        <!-- {{ Counts.families }} -->42424
-                    </button>
-                    <img src="../assets/icons/family.svg" alt="Logo" />
-                </div>
-                <button class="text-[#475467] font-medium font text-[1rem]">
-                    Families
-                </button>
-            </div>
-          
-           
+  </div>
+  <!-- Card's Of Villages,Families And Population -->
+  <div>
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Population Card -->
+      <div class="border-1 rounded-lg shadow-md p-3">
+        <div class="flex flex-row justify-between items-stretch">
+          <button class="text-[#06038D] text-[1.5rem] font font-semibold">
+            <!-- {{ Counts.population }} -->4242
+          </button>
+          <img src="../assets/icons/users.svg" alt="Logo" />
         </div>
+        <button class="text-[#475467] font-medium font text-[1rem]">
+          Population
+        </button>
+      </div>
+      <!-- Villages Card -->
+      <div class="border-1 rounded-lg shadow-md p-3">
+        <div class="flex flex-row justify-between items-stretch">
+          <button class="text-[#046A38] text-[1.5rem] font font-semibold">
+            <!-- {{ Counts.villages }} -->2125
+          </button>
+          <img src="../assets/icons/tuscany-plaza_.svg" alt="Logo" />
+        </div>
+        <button class="text-[#475467] font-medium font text-[1rem]">
+          Villages
+        </button>
+      </div>
+      <!-- Families Card -->
+      <div class="border-1 rounded-lg shadow-md p-3">
+        <div class="flex flex-row justify-between items-stretch">
+          <button class="text-[#FF671F] text-[1.5rem] font font-semibold">
+            <!-- {{ Counts.families }} -->42424
+          </button>
+          <img src="../assets/icons/family.svg" alt="Logo" />
+        </div>
+        <button class="text-[#475467] font-medium font text-[1rem]">
+          Families
+        </button>
+      </div>
+
+
     </div>
-    <!-- Forms Target -->
+  </div>
+  <!-- Forms Target -->
 
 </div>
 <!-- Start -->
 <div class="justify-between min-h-screen">
-    <div class="overflow-hidden border-6 p-4 bg-[#FFF]">
-        <!-- Form Submitted Distribution -->
+  <div class="overflow-hidden border-6 p-4 bg-[#FFF]">
+    <!-- Form Submitted Distribution -->
 
-        <!--Recently added Families and Villages Card's -->
-        <div class="p-2 mt-9 bg-white rounded-lg shadow-md">
-            <div class="flex my-3 text-[1.125rem] font-semibold">Villages & Families</div>
-            <div class="">
-                <div class="space-x-4">
-                    <button class="bg-[#046A38] text-white px-4 py-2 rounded-lg shadow-sm">
-                        Village
-                    </button>
-                    <button class="bg-[#FFFFFF] px-4 py-2 rounded-lg shadow-md border-gray-200 border">
-                        Family
-                    </button>
-                    <div
-                        class="float-right flex gap-2 bg-[#FFFFFF] px-4 py-2 rounded-lg shadow-md border-gray-200 border">
-                        Published
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M6 9L12 15L18 9" stroke="#475467" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <!-- Recently added Card Data -->
-            <div class="my-6">
-                <div
-                  class="grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 w-full gap-6"
-                >
-                  <!-- Cards -->
-                  <div *ngFor="let Villages of data">
-                    <div
-                      class="border-2 p-6 border-gray-100 rounded-lg bg-white shadow-sm"
-                    >
-                      <div class="flex justify-between relative">
-                        <p class="absolute py-3 px-[1.2rem] text-white text-LG">
-                          {{ Villages.name.slice(0, 2) | uppercase }}
-                        </p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="61"
-                          height="60"
-                          viewBox="0 0 61 60"
-                          fill="none"
-                        >
-                          <circle cx="30.5" cy="30" r="30" fill="#6941C6" />
-                        </svg>
-                        <div>
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="25"
-                            height="24"
-                            viewBox="0 0 25 24"
-                            fill="none"
-                          >
-                            <g clip-path="url(#clip0_1997_15591)">
-                              <path
-                                d="M17.5 18L23.5 12L17.5 6"
-                                stroke="#667085"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                              />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_1997_15591">
-                                <rect
-                                  width="24"
-                                  height="24"
-                                  fill="white"
-                                  transform="translate(0.5)"
-                                />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="my-4 flex gap-4">
-                        <div class="text-[1.25rem] font-semibold text-[#344054]">
-                          {{ Villages.name }}
-                        </div>
-                        <div
-                          class="p-2 rounded-full bg-[#9E77ED] text-[0.75rem] text-[#fff]"
-                        >
-                          {{ Villages.status }}
-                        </div>
-                      </div>
-                      <div class="gap-3 flex justify-between">
-                        <div class="text-[0.75rem] text-[#475467] font-normal">
-                          State
-                        </div>
-                        <div class="text-[0.75rem] text-[#475467] font-normal">
-                          District
-                        </div>
-                      </div>
-                      <div class="gap-3 flex justify-between">
-                        <div class="text-[1rem] text-[#344054] font-medium">
-                          {{ Villages.state }}
-                        </div>
-                        <div class="text-[1rem] text-[#344054] font-medium">
-                          {{ Villages.District }}
-                        </div>
-                      </div>
-                      <div class="my-2">
-                        <hr class="border-gray-500 border-b-4 mt-3 text-gray-300" />
-                      </div>
-                      <div class="flex justify-between my-2">
-                        <div class="text-[0.75rem] text-[#475467] font-normal">
-                          Population
-                        </div>
-                        <div class="text-[0.75rem] text-[#475467] font-normal">
-                          Families
-                        </div>
-                        <div class="text-[0.75rem] text-[#475467] font-normal">
-                          Area
-                        </div>
-                      </div>
-                      <div class="flex justify-between my-2">
-                        <div class="text-[1rem] text-[#344054] font-medium">
-                          {{ Villages.population }}
-                        </div>
-                        <div class="text-[1rem] text-[#344054] font-medium">
-                          {{ Villages.families }}
-                        </div>
-                        <div class="text-[1rem] text-[#344054] font-medium">
-                          {{ Villages.area }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Show All -->
-                <div class="my-6 flex space-x-6 justify-center text-lg text-[#046A38]">
-                  <button class="">Show All</button>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5 12H19"
-                      stroke="#046A38"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12 5L19 12L12 19"
-                      stroke="#046A38"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
+    <!--Recently added Families and Villages Card's -->
+    <div class="p-2 mt-9 bg-white rounded-lg shadow-md">
+      <div class="flex my-3 text-[1.125rem] font-semibold">Villages & Families</div>
+      <div class="">
+        <div class="space-x-4">
+          <button class="bg-[#046A38] text-white px-4 py-2 rounded-lg shadow-sm">
+            Village
+          </button>
+          <button class="bg-[#FFFFFF] px-4 py-2 rounded-lg shadow-md border-gray-200 border">
+            Family
+          </button>
+          <div class="float-right flex gap-2 bg-[#FFFFFF] px-4 py-2 rounded-lg shadow-md border-gray-200 border">
+            Published
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="#475467" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- Recently added Card Data -->
+      <div class="my-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 w-full gap-6">
+          <!-- Cards -->
+          <div *ngFor="let Villages of data">
+            <div class="border-2 p-6 border-gray-100 rounded-lg bg-white shadow-sm">
+              <div class="flex justify-between relative">
+                <p class="absolute py-3 px-[1.2rem] text-white text-LG">
+                  {{ Villages.name.slice(0, 2) | uppercase }}
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="60" viewBox="0 0 61 60" fill="none">
+                  <circle cx="30.5" cy="30" r="30" fill="#6941C6" />
+                </svg>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <g clip-path="url(#clip0_1997_15591)">
+                      <path d="M17.5 18L23.5 12L17.5 6" stroke="#667085" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1997_15591">
+                        <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
                   </svg>
                 </div>
               </div>
+              <div class="my-4 flex gap-4">
+                <div class="text-[1.25rem] font-semibold text-[#344054]">
+                  {{ Villages.name }}
+                </div>
+                <div class="p-2 rounded-full bg-[#9E77ED] text-[0.75rem] text-[#fff]">
+                  {{ Villages.status }}
+                </div>
+              </div>
+              <div class="gap-3 flex justify-between">
+                <div class="text-[0.75rem] text-[#475467] font-normal">
+                  State
+                </div>
+                <div class="text-[0.75rem] text-[#475467] font-normal">
+                  District
+                </div>
+              </div>
+              <div class="gap-3 flex justify-between">
+                <div class="text-[1rem] text-[#344054] font-medium">
+                  {{ Villages.state }}
+                </div>
+                <div class="text-[1rem] text-[#344054] font-medium">
+                  {{ Villages.District }}
+                </div>
+              </div>
+              <div class="my-2">
+                <hr class="border-gray-500 border-b-4 mt-3 text-gray-300" />
+              </div>
+              <div class="flex justify-between my-2">
+                <div class="text-[0.75rem] text-[#475467] font-normal">
+                  Population
+                </div>
+                <div class="text-[0.75rem] text-[#475467] font-normal">
+                  Families
+                </div>
+                <div class="text-[0.75rem] text-[#475467] font-normal">
+                  Area
+                </div>
+              </div>
+              <div class="flex justify-between my-2">
+                <div class="text-[1rem] text-[#344054] font-medium">
+                  {{ Villages.population }}
+                </div>
+                <div class="text-[1rem] text-[#344054] font-medium">
+                  {{ Villages.families }}
+                </div>
+                <div class="text-[1rem] text-[#344054] font-medium">
+                  {{ Villages.area }}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Show All -->
+        <div class="my-6 flex space-x-6 justify-center text-lg text-[#046A38]">
+          <button class="">Show All</button>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="#046A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 5L19 12L12 19" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+      
     </div>
+  </div>
 </div>
 <!-- Footer -->
 <div class="sticky inset-x-0 bottom-6">

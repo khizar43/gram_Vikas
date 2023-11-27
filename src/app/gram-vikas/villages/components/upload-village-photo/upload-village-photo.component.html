@@ -59,16 +59,29 @@
         <div class="flex justify-center mt-8">
           <div class="max-w-2xl rounded-lg">
             <div class="m-4">
-                <label class="inline-block mb-2 text-gray-500">File Upload</label>
+                
                 <div class="flex items-center justify-center w-full">
                     <label
-                        class="flex flex-col w-full h-32 border-4 border-gray-300 border-dashed hover:bg-gray-100 hover:border-gray-300">
+                        class="flex flex-col w-full h-32 border-4 rounded-3xl border-gray-300 border-dashed hover:bg-gray-100 hover:border-gray-300">
                         <div class="flex flex-col items-center justify-center pt-7">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-gray-400 group-hover:text-gray-600"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1873_23876)">
+                            <path d="M19.7 0H5.3C2.64903 0 0.5 2.14903 0.5 4.8V19.2C0.5 21.851 2.64903 24 5.3 24H19.7C22.351 24 24.5 21.851 24.5 19.2V4.8C24.5 2.14903 22.351 0 19.7 0Z" fill="url(#paint0_linear_1873_23876)"/>
+                            <path d="M4.96808 18.6634C4.56914 19.4612 5.14933 20.4 6.04139 20.4H14.1581C15.0502 20.4 15.6304 19.4612 15.2315 18.6634L11.1731 10.5467C10.7309 9.66218 9.46868 9.66218 9.0264 10.5467L4.96808 18.6634Z" fill="white"/>
+                            <path d="M12.1683 18.6634C11.7693 19.4613 12.3495 20.4 13.2416 20.4H18.9583C19.8504 20.4 20.4306 19.4613 20.0316 18.6634L17.1732 12.9467C16.731 12.0622 15.4689 12.0622 15.0266 12.9467L12.1683 18.6634Z" fill="white" fill-opacity="0.6"/>
+                            <path d="M18.5001 8.40001C19.8256 8.40001 20.9001 7.32546 20.9001 5.99998C20.9001 4.67449 19.8256 3.59998 18.5001 3.59998C17.1746 3.59998 16.1001 4.67449 16.1001 5.99998C16.1001 7.32546 17.1746 8.40001 18.5001 8.40001Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <linearGradient id="paint0_linear_1873_23876" x1="12.5" y1="0" x2="12.5" y2="24" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#056A39"/>
+                            <stop offset="1" stop-color="#13644A"/>
+                            </linearGradient>
+                            <clipPath id="clip0_1873_23876">
+                            <rect width="24" height="24" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                            </defs>
                             </svg>
+                            
                             <div class="flex space-x-2 break-words">
                               <p class="pt-1 text-sm tracking-wider text-[#FF671F] font-medium group-hover:text-gray-600">
                                 Browse</p>
@@ -91,17 +104,35 @@
       </form>
   
     </div>
-    <div class="w-full fixed bottom-0 left-0 h-[5rem]  flex space-x-6 mt-6 bg-white border-t-2 justify-center">
-      <div class="progress-bar ml-6 mt-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-      <button class="w-7/12 bg-green-800 h-3/5 text-white mt-3 rounded-md" >
-        <div class="flex justify-center space-x-2">
-          <p>Proceed</p>
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.18408 12.3419H19.1841" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M12.1841 5.34192L19.1841 12.3419L12.1841 19.3419" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </div>
-      </button>
+    <div class="w-full fixed bottom-0 left-0 h-[5rem] flex space-x-6 mt-6 bg-white border-t-2 justify-center">
+      <!-- <div class="progress-bar html">
+        <progress id="html" min="0" max="100" value="92"></progress>
+      </div> -->
+  
+      <div class="progress-bar  mt-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="flex w-8/12 space-x-4">
+        <button class="w-6/12 border-green-900 border-4   h-3/5 text-green-700 mt-3 rounded-md" routerLink="/dashboard/add-village">
+          <div class="flex justify-center space-x-2">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.1841 12.3419H5.18408" stroke="#046A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.1841 19.3419L5.18408 12.3419L12.1841 5.34192" stroke="#046A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+            <p>Previous</p>
+          </div>
+          </button>
+        <button class="w-6/12 bg-green-800 h-3/5 text-white mt-3 rounded-md" >
+          <div class="flex justify-center space-x-2">
+            <p>Proceed</p>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.18408 12.3419H19.1841" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.1841 5.34192L19.1841 12.3419L12.1841 19.3419" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+          </div>
+         </button>
+      </div>
+      
     </div>
     </div>
     

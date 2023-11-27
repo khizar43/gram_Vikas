@@ -12,7 +12,7 @@ import { NotificationComponent } from './components/notification/notification.co
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent
   },
   {

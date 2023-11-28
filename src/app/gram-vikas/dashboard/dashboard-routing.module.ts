@@ -8,23 +8,21 @@ import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent
+    path: 'home', component: HomeComponent
   },
   {
-    path: 'village',
-    component: VillageComponent,
+    path: 'village', component: VillageComponent,
   },
  
-  { path: 'agent-profile', component: AgentProfileComponent },
+  {
+     path: 'agent-profile', component: AgentProfileComponent 
+},
 
   {
-    path:'notification',
-    component:NotificationComponent
+    path:'notification', component:NotificationComponent
   },
   {
-    path:'form-to-be-filled',
-    component:FormToBeFilledComponent
+    path:'form-to-be-filled', component:FormToBeFilledComponent
   }
 ];
 

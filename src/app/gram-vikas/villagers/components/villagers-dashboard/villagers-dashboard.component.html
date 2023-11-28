@@ -1,1 +1,812 @@
-<p>villagers-dashboard works!</p>
+<!-- Stat Family Profile -->
+<div class="bg-white">
+    <div>
+      <!-- Back Button Arrow -->
+      <button class="m-20 p-1 bg-white rounded-full absolute">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+        >
+          <path
+            d="M19 12H5"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12 19L5 12L12 5"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <!-- Cover Photo -->
+      <div class="h-2/4 sm:h-64 overflow-hidden">
+        <img
+          class="w-full object-cover"
+          src="https://picsum.photos/200/300"
+          alt="Photo by aldi sigun on Unsplash"
+        />
+      </div>
+    </div>
+    <!-- Profile Photo -->
+    <div class="">
+      <div class="py-1">
+        <div class="flex items-end px-5 -mt-12 mb-5">
+          <span>
+            <img
+              alt="Photo by aldi sigun on Unsplash"
+              src="https://picsum.photos/200"
+              class="mx-auto object-cover rounded-full h-36 w-36 bg-white p-2.5"
+            />
+          </span>
+          <div class="mx-4 mt-14 px-3">
+            <div class="flex gap-3">
+              <h1 class="font-bold text-[#344054] text-3xl">Rajbeer</h1>
+              <div
+                class="text-[0.75rem] text-white rounded-full my-2.5 px-3 bg-[#9E77ED]"
+              >
+                Published
+              </div>
+            </div>
+            <div class="flex gap-3 my-2">
+              <h1 class="font-medium text-[#344054] text-[1rem]">
+                Head of the family , Farmer
+              </h1>
+            </div>
+          </div>
+        </div>
+        <button class="float-right -my-32 mx-6 px-4 bg-[#046A38] py-3 rounded-xl">
+          <div class="items-end flex gap-3">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M12 20H21"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.5 3.49998C16.8978 3.10216 17.4374 2.87866 18 2.87866C18.2786 2.87866 18.5544 2.93353 18.8118 3.04014C19.0692 3.14674 19.303 3.303 19.5 3.49998C19.697 3.69697 19.8532 3.93082 19.9598 4.18819C20.0665 4.44556 20.1213 4.72141 20.1213 4.99998C20.1213 5.27856 20.0665 5.55441 19.9598 5.81178C19.8532 6.06915 19.697 6.303 19.5 6.49998L7 19L3 20L4 16L16.5 3.49998Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="text-[1rem] text-white font-medium">Edit Family</div>
+          </div>
+        </button>
+      </div>
+    </div>
+    <!-- Members Card -->
+    <div class="mx-4">
+      <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border-1 rounded-lg shadow-md p-3">
+          <div class="flex flex-row justify-between items-stretch">
+            <button class="text-[#046A38] text-[1.5rem] font font-bold">4</button>
+            <img src="../assets/icons/family.svg" alt="Logo" />
+          </div>
+          <button class="text-[#475467] font-medium font text-[1rem]">
+            Members
+          </button>
+        </div>
+        <!-- Males Card -->
+        <div class="border-1 rounded-lg shadow-md p-3">
+          <div class="flex flex-row justify-between items-stretch">
+            <button class="text-[#FF671F] text-[1.5rem] font font-bold">2</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M35.5554 22.2221C35.5554 19.7677 34.3121 17.7777 32.7777 17.7777C32.7643 17.7777 32.7543 17.7832 32.741 17.7832C31.061 10.7821 25.9932 5.69434 19.9999 5.69434C14.0066 5.69434 8.93767 10.7832 7.25878 17.7832C7.24545 17.7821 7.23434 17.7777 7.22211 17.7777C5.68767 17.7777 4.44434 19.7677 4.44434 22.2221C4.44434 24.5632 5.57878 26.461 7.01545 26.6332C8.37434 34.021 13.6654 38.8888 19.9999 38.8888C26.3332 38.8888 31.6254 34.021 32.9832 26.6332C34.421 26.461 35.5554 24.5632 35.5554 22.2221Z"
+                fill="#FFE1BD"
+              />
+              <path
+                d="M14.4441 23.3334C14.1494 23.3334 13.8668 23.2163 13.6584 23.0079C13.4501 22.7996 13.333 22.5169 13.333 22.2222V20C13.333 19.7053 13.4501 19.4227 13.6584 19.2144C13.8668 19.006 14.1494 18.8889 14.4441 18.8889C14.7388 18.8889 15.0214 19.006 15.2298 19.2144C15.4382 19.4227 15.5552 19.7053 15.5552 20V22.2222C15.5552 22.5169 15.4382 22.7996 15.2298 23.0079C15.0214 23.2163 14.7388 23.3334 14.4441 23.3334ZM25.5552 23.3334C25.2605 23.3334 24.9779 23.2163 24.7696 23.0079C24.5612 22.7996 24.4441 22.5169 24.4441 22.2222V20C24.4441 19.7053 24.5612 19.4227 24.7696 19.2144C24.9779 19.006 25.2605 18.8889 25.5552 18.8889C25.8499 18.8889 26.1325 19.006 26.3409 19.2144C26.5493 19.4227 26.6663 19.7053 26.6663 20V22.2222C26.6663 22.5169 26.5493 22.7996 26.3409 23.0079C26.1325 23.2163 25.8499 23.3334 25.5552 23.3334Z"
+                fill="#664E27"
+              />
+              <path
+                d="M19.9997 34.4445C15.3319 34.4445 13.8986 33.2479 13.6586 33.0079C13.4449 32.8051 13.3206 32.5258 13.3129 32.2314C13.3052 31.9369 13.4147 31.6515 13.6175 31.4379C13.8202 31.2242 14.0995 31.0999 14.394 31.0921C14.6884 31.0844 14.9738 31.194 15.1875 31.3967C15.2764 31.4612 16.4097 32.2223 19.9997 32.2223C23.7275 32.2223 24.8064 31.4012 24.8175 31.3923C25.2508 30.9601 25.9297 30.9812 26.3653 31.4156C26.7997 31.8501 26.7753 32.5745 26.3419 33.009C26.1008 33.2479 24.6675 34.4445 19.9997 34.4445ZM21.1108 28.889H18.8886C18.5939 28.889 18.3113 28.7719 18.1029 28.5635C17.8945 28.3552 17.7775 28.0725 17.7775 27.7779C17.7775 27.4832 17.8945 27.2006 18.1029 26.9922C18.3113 26.7838 18.5939 26.6667 18.8886 26.6667H21.1108C21.4055 26.6667 21.6881 26.7838 21.8965 26.9922C22.1049 27.2006 22.2219 27.4832 22.2219 27.7779C22.2219 28.0725 22.1049 28.3552 21.8965 28.5635C21.6881 28.7719 21.4055 28.889 21.1108 28.889Z"
+                fill="#915A34"
+              />
+              <path
+                d="M20.0001 1.11108C28.889 1.11108 34.4446 7.77775 34.4446 13.3333C34.4446 18.8889 33.3334 21.1111 32.2223 18.8889L30.0001 14.4444C30.0001 14.4444 23.3334 14.4444 21.1112 12.2222C21.1112 12.2222 24.4446 18.8889 17.7779 12.2222C17.7779 12.2222 18.889 16.6666 12.2223 11.1111C12.2223 11.1111 8.889 13.3333 7.77789 18.8889C7.47011 20.43 5.55566 18.8889 5.55566 13.3333C5.55566 7.77775 10.0001 1.11108 20.0001 1.11108Z"
+                fill="#594640"
+              />
+            </svg>
+          </div>
+          <button class="text-[#475467] font-medium font text-[1rem]">
+            Males
+          </button>
+        </div>
+        <!-- Females Card -->
+        <div class="border-1 rounded-lg shadow-md p-3">
+          <div class="flex flex-row justify-between items-stretch">
+            <button class="text-[#06038D] text-[1.5rem] font font-bold">2</button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M36.1248 25C36.1248 25 38.1248 21.5 38.1248 16.25C38.1248 9.375 33.0623 1.25 19.9998 1.25C6.93728 1.25 1.87478 9.375 1.87478 16.25C1.87478 21.5 3.81228 25 3.81228 25C1.56228 27.5625 0.187283 32.75 2.12478 36.125C2.93728 37.5 10.9373 42.375 11.6873 33.6875H28.1873C28.9998 42.3125 36.9998 37.5 37.7498 36.125C39.7498 32.75 38.3748 27.5625 36.1248 25Z"
+                fill="#594640"
+              />
+              <path
+                d="M20 3.75C10.4375 3.75 3.4375 8.75 3.4375 15C3.4375 15 6 5.625 20 5.625C34 5.625 35.9375 15 35.9375 15C35.9375 8.75 29.5625 3.75 20 3.75Z"
+                fill="#C28FEF"
+              />
+              <path
+                d="M35.8125 26.25C39.6875 26.25 39.6875 20.625 35.8125 20.625V18.75C35.8125 18.75 13.9375 18.1875 8.9375 10.625C10.1875 18.25 4.125 20.625 4.125 20.625C0.25 20.625 0.25 26.25 4.125 26.25C4.125 30.625 8.6875 37.5 19.9375 37.5C31.1875 37.5 35.8125 30.625 35.8125 26.25Z"
+                fill="#FFE1BD"
+              />
+              <path
+                d="M27.8125 26.875C30.0562 26.875 31.875 25.0562 31.875 22.8125C31.875 20.5688 30.0562 18.75 27.8125 18.75C25.5688 18.75 23.75 20.5688 23.75 22.8125C23.75 25.0562 25.5688 26.875 27.8125 26.875Z"
+                fill="white"
+              />
+              <path
+                d="M12.1875 26.875C14.4312 26.875 16.25 25.0562 16.25 22.8125C16.25 20.5688 14.4312 18.75 12.1875 18.75C9.94384 18.75 8.125 20.5688 8.125 22.8125C8.125 25.0562 9.94384 26.875 12.1875 26.875Z"
+                fill="white"
+              />
+              <path
+                d="M27.8125 25.625C29.3658 25.625 30.625 24.3658 30.625 22.8125C30.625 21.2592 29.3658 20 27.8125 20C26.2592 20 25 21.2592 25 22.8125C25 24.3658 26.2592 25.625 27.8125 25.625Z"
+                fill="#664E27"
+              />
+              <path
+                d="M27.8125 23.75C28.3303 23.75 28.75 23.3303 28.75 22.8125C28.75 22.2947 28.3303 21.875 27.8125 21.875C27.2947 21.875 26.875 22.2947 26.875 22.8125C26.875 23.3303 27.2947 23.75 27.8125 23.75Z"
+                fill="#231F20"
+              />
+              <path
+                d="M12.1875 25.625C13.7408 25.625 15 24.3658 15 22.8125C15 21.2592 13.7408 20 12.1875 20C10.6342 20 9.375 21.2592 9.375 22.8125C9.375 24.3658 10.6342 25.625 12.1875 25.625Z"
+                fill="#664E27"
+              />
+              <path
+                d="M12.1875 23.75C12.7053 23.75 13.125 23.3303 13.125 22.8125C13.125 22.2947 12.7053 21.875 12.1875 21.875C11.6697 21.875 11.25 22.2947 11.25 22.8125C11.25 23.3303 11.6697 23.75 12.1875 23.75Z"
+                fill="#231F20"
+              />
+              <path
+                d="M25.0624 30.0625C21.8124 32.3125 18.1874 32.3125 14.9374 30.0625C14.5624 29.8125 14.1874 30.25 14.4374 30.6875C15.4374 32.3125 17.4374 33.75 19.9999 33.75C22.5624 33.75 24.5624 32.3125 25.5624 30.6875C25.8124 30.25 25.4374 29.8125 25.0624 30.0625Z"
+                fill="#664E27"
+              />
+            </svg>
+          </div>
+          <button class="text-[#475467] font-medium font text-[1rem]">
+            Females
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Family Insights -->
+    <div class="mt-3 bg-[#F0F9FF] py-6">
+      <div class="m-6">
+        <div class="text-[1.125rem] text-[#1D2939] font-medium">
+          Family Insights
+        </div>
+      </div>
+      <div class="">
+        <div class="flex justify-center">
+          <div class="w-1/3 mx-4">
+            <div>
+              <div id="chart-container" class="mx-1 p-6 h-44 bg-white shadow-lg">
+                FusionCharts
+              </div>
+              <p class="mx-1 p-2">Family Growth</p>
+            </div>
+          </div>
+          <div class="w-10/12 mx-4">
+            <div class="grid grid-cols-3 gap-2">
+              <div class="border-1 rounded-lg shadow-md p-3 bg-white">
+                <div class="flex flex-row justify-between items-stretch">
+                  <p class="text-[1.5rem] font font-bold">2</p>
+                </div>
+                <p class="text-[#475467] font-medium font text-[1rem]">
+                  High school pass-out
+                </p>
+              </div>
+              <div class="border-1 rounded-lg shadow-md p-3 bg-white">
+                <div class="flex flex-row justify-between items-stretch">
+                  <p class="text-[1.5rem] font font-bold">1</p>
+                </div>
+                <p class="text-[#475467] font-medium font text-[1rem]">
+                  10th pass-out
+                </p>
+              </div>
+              <div class="border-1 rounded-lg shadow-md p-3 bg-white">
+                <div class="flex flex-row justify-between items-stretch">
+                  <p class="text-[1.5rem] font font-bold">2 acre</p>
+                </div>
+                <p class="text-[#475467] font-medium font text-[1rem]">
+                  Farming land
+                </p>
+              </div>
+              <div class="border-1 rounded-lg shadow-md p-3 bg-white">
+                <div class="flex flex-row justify-between items-stretch">
+                  <p class="text-[1.5rem] font font-bold">1</p>
+                </div>
+                <p class="text-[#475467] font-medium font text-[1rem]">
+                  12th pass-out
+                </p>
+              </div>
+              <div class="border-1 rounded-lg shadow-md p-3 bg-white">
+                <div class="flex flex-row justify-between items-stretch">
+                  <p class="text-[1.5rem] font font-bold">1</p>
+                </div>
+                <p class="text-[#475467] font-medium font text-[1rem]">
+                  Graduates
+                </p>
+              </div>
+              <div class="border-1 rounded-lg shadow-md p-3 bg-white">
+                <div class="flex flex-row justify-between items-stretch">
+                  <p class="text-[1.5rem] font font-bold">2</p>
+                </div>
+                <p class="text-[#475467] font-medium font text-[1rem]">
+                  live stocks
+                </p>
+              </div>
+  
+              <!-- <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Family Members  -->
+    <div class="bg-[#F4F3FF] shadow-lg py-6">
+      <div class="flex justify-between mx-3 my-12">
+        <div class="text-[1.125rem] text-[#1D2939] font-medium">
+          Family Members
+        </div>
+        <div class="text-[1.125rem] text-[#046A38] font-medium">View All</div>
+      </div>
+      <!-- Cards Family Members -->
+      <div class="flex overflow-x-auto whitespace-nowrap no-scrollbar mx-12">
+        <div class="flex gap-16">
+          <!-- 1 -->
+          <div
+            class="bg-white w-60 shadow-lg rounded-3xl text-center justify-center mt-28"
+          >
+            <div class="pt-16 px-10">
+              <img
+                src="https://picsum.photos/200"
+                class="shadow-2xl rounded-3xl h-30 w-30 mx-auto -mt-40"
+                style="user-select: none"
+                alt="avatar"
+              />
+            </div>
+            <div class="my-4">
+              <h1 class="mt-12 text-lg font-bold">Khushi</h1>
+              <h1 class="mt-6 text-sm">5th Standard / Student</h1>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="bg-white w-60 shadow-lg rounded-3xl text-center justify-center mt-28"
+          >
+            <div class="pt-16 px-10">
+              <img
+                src="https://picsum.photos/200"
+                class="shadow-2xl rounded-3xl h-30 w-30 mx-auto -mt-40"
+                style="user-select: none"
+                alt="avatar"
+              />
+            </div>
+            <div class="my-4">
+              <h1 class="mt-12 text-lg font-bold">Suman</h1>
+              <h1 class="mt-6 text-sm">12 th pass out / House wife</h1>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="bg-white w-60 shadow-lg rounded-3xl text-center justify-center mt-28"
+          >
+            <div class="pt-16 px-10">
+              <img
+                src="https://picsum.photos/200"
+                class="shadow-2xl rounded-3xl h-30 w-30 mx-auto -mt-40"
+                style="user-select: none"
+                alt="avatar"
+              />
+            </div>
+            <div class="my-4">
+              <h1 class="mt-12 text-lg font-bold">Rahul</h1>
+              <h1 class="mt-6 text-sm">9th Standard / Student</h1>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div
+            class="bg-white w-60 shadow-lg rounded-3xl text-center justify-center mt-28"
+          >
+            <div class="pt-16 px-10">
+              <img
+                src="https://picsum.photos/200"
+                class="shadow-2xl rounded-3xl h-30 w-30 mx-auto -mt-40"
+                style="user-select: none"
+                alt="avatar"
+              />
+            </div>
+            <div class="my-4">
+              <h1 class="mt-12 text-lg font-bold">Khushi</h1>
+              <h1 class="mt-6 text-sm">5th Standard / Student</h1>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div
+            class="bg-white w-60 shadow-lg rounded-3xl text-center justify-center mt-28"
+          >
+            <div class="pt-16 px-10">
+              <img
+                src="https://picsum.photos/200"
+                class="shadow-2xl rounded-3xl h-30 w-30 mx-auto -mt-40"
+                style="user-select: none"
+                alt="avatar"
+              />
+            </div>
+            <div class="my-4">
+              <h1 class="mt-12 text-lg font-bold">Khushi</h1>
+              <h1 class="mt-6 text-sm">5th Standard / Student</h1>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div
+            class="bg-white w-60 shadow-lg rounded-3xl text-center justify-center mt-28"
+          >
+            <div class="pt-16 px-10">
+              <img
+                src="https://picsum.photos/200"
+                class="shadow-2xl rounded-3xl h-30 w-30 mx-auto -mt-40"
+                style="user-select: none"
+                alt="avatar"
+              />
+            </div>
+            <div class="my-4">
+              <h1 class="mt-12 text-lg font-bold">Khushi</h1>
+              <h1 class="mt-6 text-sm">5th Standard / Student</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Family Info Card  -->
+    <div class="my-10 mx-6 bg-white p-6 shadow-2xl rounded-2xl">
+      <div class="">
+        <div class="flex justify-between my-6">
+          <p class="text-xl font-medium text-[#1D2939]">Family Info</p>
+          <svg
+            width="114"
+            height="34"
+            viewBox="0 0 114 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5 10C0.5 4.75329 4.75329 0.5 10 0.5H104C109.247 0.5 113.5 4.7533 113.5 10V24C113.5 29.2467 109.247 33.5 104 33.5H10C4.7533 33.5 0.5 29.2467 0.5 24V10Z"
+              stroke="#EAECF0"
+            />
+            <path
+              d="M34 25H43"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.5 8.49998C38.8978 8.10216 39.4374 7.87866 40 7.87866C40.2786 7.87866 40.5544 7.93353 40.8118 8.04014C41.0692 8.14674 41.303 8.303 41.5 8.49998C41.697 8.69697 41.8532 8.93082 41.9598 9.18819C42.0665 9.44556 42.1213 9.72141 42.1213 9.99998C42.1213 10.2786 42.0665 10.5544 41.9598 10.8118C41.8532 11.0691 41.697 11.303 41.5 11.5L29 24L25 25L26 21L38.5 8.49998Z"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65.024 12.852V16.116H68.864V17.604H65.024V21.012H69.344V22.5H63.2V11.364H69.344V12.852H65.024ZM70.9826 18.052C70.9826 17.1667 71.164 16.3827 71.5266 15.7C71.9 15.0173 72.4013 14.4893 73.0306 14.116C73.6706 13.732 74.38 13.54 75.1586 13.54C75.7346 13.54 76.3 13.668 76.8546 13.924C77.42 14.1693 77.868 14.5 78.1986 14.916V10.66H80.0386V22.5H78.1986V21.172C77.9 21.5987 77.484 21.9507 76.9506 22.228C76.428 22.5053 75.8253 22.644 75.1426 22.644C74.3746 22.644 73.6706 22.452 73.0306 22.068C72.4013 21.6733 71.9 21.1293 71.5266 20.436C71.164 19.732 70.9826 18.9373 70.9826 18.052ZM78.1986 18.084C78.1986 17.476 78.0706 16.948 77.8146 16.5C77.5693 16.052 77.244 15.7107 76.8386 15.476C76.4333 15.2413 75.996 15.124 75.5266 15.124C75.0573 15.124 74.62 15.2413 74.2146 15.476C73.8093 15.7 73.4786 16.036 73.2226 16.484C72.9773 16.9213 72.8546 17.444 72.8546 18.052C72.8546 18.66 72.9773 19.1933 73.2226 19.652C73.4786 20.1107 73.8093 20.4627 74.2146 20.708C74.6306 20.9427 75.068 21.06 75.5266 21.06C75.996 21.06 76.4333 20.9427 76.8386 20.708C77.244 20.4733 77.5693 20.132 77.8146 19.684C78.0706 19.2253 78.1986 18.692 78.1986 18.084ZM83.3624 12.516C83.0317 12.516 82.7544 12.404 82.5304 12.18C82.3064 11.956 82.1944 11.6787 82.1944 11.348C82.1944 11.0173 82.3064 10.74 82.5304 10.516C82.7544 10.292 83.0317 10.18 83.3624 10.18C83.6824 10.18 83.9544 10.292 84.1784 10.516C84.4024 10.74 84.5144 11.0173 84.5144 11.348C84.5144 11.6787 84.4024 11.956 84.1784 12.18C83.9544 12.404 83.6824 12.516 83.3624 12.516ZM84.2584 13.684V22.5H82.4344V13.684H84.2584ZM88.7811 15.172V20.052C88.7811 20.3827 88.8558 20.6227 89.0051 20.772C89.1651 20.9107 89.4318 20.98 89.8051 20.98H90.9251V22.5H89.4851C88.6638 22.5 88.0345 22.308 87.5971 21.924C87.1598 21.54 86.9411 20.916 86.9411 20.052V15.172H85.9011V13.684H86.9411V11.492H88.7811V13.684H90.9251V15.172H88.7811Z"
+              fill="#046A38"
+            />
+          </svg>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3">
+          <div class="text-[#475467] text-sm font-medium">Village</div>
+          <div class="text-[#475467] text-sm font-medium">District</div>
+          <div class="text-[#475467] text-sm font-medium">Taluka</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Karagaon</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Ahmednager</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Karvir</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">State</div>
+          <div class="text-[#475467] text-sm font-medium">Cast</div>
+          <div class="text-[#475467] text-sm font-medium">House number</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Maharashtra</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Brahmin</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">#123</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">Agriculture Area</div>
+          <div class="text-[#475467] text-sm font-medium">
+            Non-agricultural Area
+          </div>
+          <div class="text-[#475467] text-sm font-medium">Water facility</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">2 Acres</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">1 Acres</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">River</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">Own Business</div>
+          <div class="text-[#475467] text-sm font-medium">
+            Other agricultural business
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            Interested in skill development
+          </div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">No</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">No</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Yes</p>
+        </div>
+      </div>
+    </div>
+    <!-- Family Info - END  -->
+    <!-- Resources Card  -->
+    <div class="my-10 mx-6 bg-white p-6 shadow-2xl rounded-2xl">
+      <div class="">
+        <div class="flex justify-between my-6">
+          <p class="text-xl font-medium text-[#1D2939]">Resources</p>
+          <svg
+            width="114"
+            height="34"
+            viewBox="0 0 114 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5 10C0.5 4.75329 4.75329 0.5 10 0.5H104C109.247 0.5 113.5 4.7533 113.5 10V24C113.5 29.2467 109.247 33.5 104 33.5H10C4.7533 33.5 0.5 29.2467 0.5 24V10Z"
+              stroke="#EAECF0"
+            />
+            <path
+              d="M34 25H43"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.5 8.49998C38.8978 8.10216 39.4374 7.87866 40 7.87866C40.2786 7.87866 40.5544 7.93353 40.8118 8.04014C41.0692 8.14674 41.303 8.303 41.5 8.49998C41.697 8.69697 41.8532 8.93082 41.9598 9.18819C42.0665 9.44556 42.1213 9.72141 42.1213 9.99998C42.1213 10.2786 42.0665 10.5544 41.9598 10.8118C41.8532 11.0691 41.697 11.303 41.5 11.5L29 24L25 25L26 21L38.5 8.49998Z"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65.024 12.852V16.116H68.864V17.604H65.024V21.012H69.344V22.5H63.2V11.364H69.344V12.852H65.024ZM70.9826 18.052C70.9826 17.1667 71.164 16.3827 71.5266 15.7C71.9 15.0173 72.4013 14.4893 73.0306 14.116C73.6706 13.732 74.38 13.54 75.1586 13.54C75.7346 13.54 76.3 13.668 76.8546 13.924C77.42 14.1693 77.868 14.5 78.1986 14.916V10.66H80.0386V22.5H78.1986V21.172C77.9 21.5987 77.484 21.9507 76.9506 22.228C76.428 22.5053 75.8253 22.644 75.1426 22.644C74.3746 22.644 73.6706 22.452 73.0306 22.068C72.4013 21.6733 71.9 21.1293 71.5266 20.436C71.164 19.732 70.9826 18.9373 70.9826 18.052ZM78.1986 18.084C78.1986 17.476 78.0706 16.948 77.8146 16.5C77.5693 16.052 77.244 15.7107 76.8386 15.476C76.4333 15.2413 75.996 15.124 75.5266 15.124C75.0573 15.124 74.62 15.2413 74.2146 15.476C73.8093 15.7 73.4786 16.036 73.2226 16.484C72.9773 16.9213 72.8546 17.444 72.8546 18.052C72.8546 18.66 72.9773 19.1933 73.2226 19.652C73.4786 20.1107 73.8093 20.4627 74.2146 20.708C74.6306 20.9427 75.068 21.06 75.5266 21.06C75.996 21.06 76.4333 20.9427 76.8386 20.708C77.244 20.4733 77.5693 20.132 77.8146 19.684C78.0706 19.2253 78.1986 18.692 78.1986 18.084ZM83.3624 12.516C83.0317 12.516 82.7544 12.404 82.5304 12.18C82.3064 11.956 82.1944 11.6787 82.1944 11.348C82.1944 11.0173 82.3064 10.74 82.5304 10.516C82.7544 10.292 83.0317 10.18 83.3624 10.18C83.6824 10.18 83.9544 10.292 84.1784 10.516C84.4024 10.74 84.5144 11.0173 84.5144 11.348C84.5144 11.6787 84.4024 11.956 84.1784 12.18C83.9544 12.404 83.6824 12.516 83.3624 12.516ZM84.2584 13.684V22.5H82.4344V13.684H84.2584ZM88.7811 15.172V20.052C88.7811 20.3827 88.8558 20.6227 89.0051 20.772C89.1651 20.9107 89.4318 20.98 89.8051 20.98H90.9251V22.5H89.4851C88.6638 22.5 88.0345 22.308 87.5971 21.924C87.1598 21.54 86.9411 20.916 86.9411 20.052V15.172H85.9011V13.684H86.9411V11.492H88.7811V13.684H90.9251V15.172H88.7811Z"
+              fill="#046A38"
+            />
+          </svg>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3">
+          <div class="text-[#475467] text-sm font-medium">Cooking Fuel</div>
+          <div class="text-[#475467] text-sm font-medium">Cost of bio gas</div>
+          <div class="text-[#475467] text-sm font-medium">
+            Bio gas connections
+          </div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Bio Gas</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">230 rupees</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">2</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">Lpg connections</div>
+          <div class="text-[#475467] text-sm font-medium">Cost of lpg</div>
+          <div class="text-[#475467] text-sm font-medium">
+            Electric city connections
+          </div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">1</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">430 rupees</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">2</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">
+            Cost of electricity
+          </div>
+          <div class="text-[#475467] text-sm font-medium">Solar Connections</div>
+          <div class="text-[#475467] text-sm font-medium">Cost of Solar</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">
+            5 rupee per unit
+          </p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">1</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">
+            2 rupee per unit
+          </p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">
+            Agriculture technology
+          </div>
+          <div class="text-[#475467] text-sm font-medium">Modern Tools</div>
+          <div class="text-[#475467] text-sm font-medium">Traditional tools</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Revised</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">
+            Tractor , Diesel pumps
+          </p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Sickel, sphade</p>
+        </div>
+        <div class="text-[#475467] text-sm font-medium mt-4">
+          Buying farm implements from the Agricultural Implements Bank
+        </div>
+        <p class="text-[#1D2939] text-[1.125rem] font-medium mt-2">No</p>
+      </div>
+    </div>
+    <!-- Resources - END  -->
+    <!-- Framing Card  -->
+    <div class="my-10 mx-6 bg-white p-6 shadow-2xl rounded-2xl">
+      <div class="">
+        <div class="flex justify-between my-6">
+          <p class="text-xl font-medium text-[#1D2939]">Framing</p>
+          <svg
+            width="114"
+            height="34"
+            viewBox="0 0 114 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5 10C0.5 4.75329 4.75329 0.5 10 0.5H104C109.247 0.5 113.5 4.7533 113.5 10V24C113.5 29.2467 109.247 33.5 104 33.5H10C4.7533 33.5 0.5 29.2467 0.5 24V10Z"
+              stroke="#EAECF0"
+            />
+            <path
+              d="M34 25H43"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.5 8.49998C38.8978 8.10216 39.4374 7.87866 40 7.87866C40.2786 7.87866 40.5544 7.93353 40.8118 8.04014C41.0692 8.14674 41.303 8.303 41.5 8.49998C41.697 8.69697 41.8532 8.93082 41.9598 9.18819C42.0665 9.44556 42.1213 9.72141 42.1213 9.99998C42.1213 10.2786 42.0665 10.5544 41.9598 10.8118C41.8532 11.0691 41.697 11.303 41.5 11.5L29 24L25 25L26 21L38.5 8.49998Z"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65.024 12.852V16.116H68.864V17.604H65.024V21.012H69.344V22.5H63.2V11.364H69.344V12.852H65.024ZM70.9826 18.052C70.9826 17.1667 71.164 16.3827 71.5266 15.7C71.9 15.0173 72.4013 14.4893 73.0306 14.116C73.6706 13.732 74.38 13.54 75.1586 13.54C75.7346 13.54 76.3 13.668 76.8546 13.924C77.42 14.1693 77.868 14.5 78.1986 14.916V10.66H80.0386V22.5H78.1986V21.172C77.9 21.5987 77.484 21.9507 76.9506 22.228C76.428 22.5053 75.8253 22.644 75.1426 22.644C74.3746 22.644 73.6706 22.452 73.0306 22.068C72.4013 21.6733 71.9 21.1293 71.5266 20.436C71.164 19.732 70.9826 18.9373 70.9826 18.052ZM78.1986 18.084C78.1986 17.476 78.0706 16.948 77.8146 16.5C77.5693 16.052 77.244 15.7107 76.8386 15.476C76.4333 15.2413 75.996 15.124 75.5266 15.124C75.0573 15.124 74.62 15.2413 74.2146 15.476C73.8093 15.7 73.4786 16.036 73.2226 16.484C72.9773 16.9213 72.8546 17.444 72.8546 18.052C72.8546 18.66 72.9773 19.1933 73.2226 19.652C73.4786 20.1107 73.8093 20.4627 74.2146 20.708C74.6306 20.9427 75.068 21.06 75.5266 21.06C75.996 21.06 76.4333 20.9427 76.8386 20.708C77.244 20.4733 77.5693 20.132 77.8146 19.684C78.0706 19.2253 78.1986 18.692 78.1986 18.084ZM83.3624 12.516C83.0317 12.516 82.7544 12.404 82.5304 12.18C82.3064 11.956 82.1944 11.6787 82.1944 11.348C82.1944 11.0173 82.3064 10.74 82.5304 10.516C82.7544 10.292 83.0317 10.18 83.3624 10.18C83.6824 10.18 83.9544 10.292 84.1784 10.516C84.4024 10.74 84.5144 11.0173 84.5144 11.348C84.5144 11.6787 84.4024 11.956 84.1784 12.18C83.9544 12.404 83.6824 12.516 83.3624 12.516ZM84.2584 13.684V22.5H82.4344V13.684H84.2584ZM88.7811 15.172V20.052C88.7811 20.3827 88.8558 20.6227 89.0051 20.772C89.1651 20.9107 89.4318 20.98 89.8051 20.98H90.9251V22.5H89.4851C88.6638 22.5 88.0345 22.308 87.5971 21.924C87.1598 21.54 86.9411 20.916 86.9411 20.052V15.172H85.9011V13.684H86.9411V11.492H88.7811V13.684H90.9251V15.172H88.7811Z"
+              fill="#046A38"
+            />
+          </svg>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3">
+          <div class="text-[#475467] text-sm font-medium">
+            Cost of chemical fertiliser
+          </div>
+          <div class="text-[#475467] text-sm font-medium">Type of Farming</div>
+          <div class="text-[#475467] text-sm font-medium">Crop-wise area</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">500 rupees</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Organic</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">2 acre</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">
+            Fully Utilised Acre
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            crop products is processed based on value
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            Value based training
+          </div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">2 acre</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Peanuts</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">
+            Food Processing
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Framing - END  -->
+    <!-- Productivity -->
+    <div class="my-10 mx-6 bg-white p-6 shadow-2xl rounded-2xl">
+      <div class="">
+        <div class="flex justify-between my-6">
+          <p class="text-xl font-medium text-[#1D2939]">Productivity</p>
+          <svg
+            width="114"
+            height="34"
+            viewBox="0 0 114 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5 10C0.5 4.75329 4.75329 0.5 10 0.5H104C109.247 0.5 113.5 4.7533 113.5 10V24C113.5 29.2467 109.247 33.5 104 33.5H10C4.7533 33.5 0.5 29.2467 0.5 24V10Z"
+              stroke="#EAECF0"
+            />
+            <path
+              d="M34 25H43"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.5 8.49998C38.8978 8.10216 39.4374 7.87866 40 7.87866C40.2786 7.87866 40.5544 7.93353 40.8118 8.04014C41.0692 8.14674 41.303 8.303 41.5 8.49998C41.697 8.69697 41.8532 8.93082 41.9598 9.18819C42.0665 9.44556 42.1213 9.72141 42.1213 9.99998C42.1213 10.2786 42.0665 10.5544 41.9598 10.8118C41.8532 11.0691 41.697 11.303 41.5 11.5L29 24L25 25L26 21L38.5 8.49998Z"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65.024 12.852V16.116H68.864V17.604H65.024V21.012H69.344V22.5H63.2V11.364H69.344V12.852H65.024ZM70.9826 18.052C70.9826 17.1667 71.164 16.3827 71.5266 15.7C71.9 15.0173 72.4013 14.4893 73.0306 14.116C73.6706 13.732 74.38 13.54 75.1586 13.54C75.7346 13.54 76.3 13.668 76.8546 13.924C77.42 14.1693 77.868 14.5 78.1986 14.916V10.66H80.0386V22.5H78.1986V21.172C77.9 21.5987 77.484 21.9507 76.9506 22.228C76.428 22.5053 75.8253 22.644 75.1426 22.644C74.3746 22.644 73.6706 22.452 73.0306 22.068C72.4013 21.6733 71.9 21.1293 71.5266 20.436C71.164 19.732 70.9826 18.9373 70.9826 18.052ZM78.1986 18.084C78.1986 17.476 78.0706 16.948 77.8146 16.5C77.5693 16.052 77.244 15.7107 76.8386 15.476C76.4333 15.2413 75.996 15.124 75.5266 15.124C75.0573 15.124 74.62 15.2413 74.2146 15.476C73.8093 15.7 73.4786 16.036 73.2226 16.484C72.9773 16.9213 72.8546 17.444 72.8546 18.052C72.8546 18.66 72.9773 19.1933 73.2226 19.652C73.4786 20.1107 73.8093 20.4627 74.2146 20.708C74.6306 20.9427 75.068 21.06 75.5266 21.06C75.996 21.06 76.4333 20.9427 76.8386 20.708C77.244 20.4733 77.5693 20.132 77.8146 19.684C78.0706 19.2253 78.1986 18.692 78.1986 18.084ZM83.3624 12.516C83.0317 12.516 82.7544 12.404 82.5304 12.18C82.3064 11.956 82.1944 11.6787 82.1944 11.348C82.1944 11.0173 82.3064 10.74 82.5304 10.516C82.7544 10.292 83.0317 10.18 83.3624 10.18C83.6824 10.18 83.9544 10.292 84.1784 10.516C84.4024 10.74 84.5144 11.0173 84.5144 11.348C84.5144 11.6787 84.4024 11.956 84.1784 12.18C83.9544 12.404 83.6824 12.516 83.3624 12.516ZM84.2584 13.684V22.5H82.4344V13.684H84.2584ZM88.7811 15.172V20.052C88.7811 20.3827 88.8558 20.6227 89.0051 20.772C89.1651 20.9107 89.4318 20.98 89.8051 20.98H90.9251V22.5H89.4851C88.6638 22.5 88.0345 22.308 87.5971 21.924C87.1598 21.54 86.9411 20.916 86.9411 20.052V15.172H85.9011V13.684H86.9411V11.492H88.7811V13.684H90.9251V15.172H88.7811Z"
+              fill="#046A38"
+            />
+          </svg>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3">
+          <div class="text-[#475467] text-sm font-medium">Source of milk</div>
+          <div class="text-[#475467] text-sm font-medium">Cow milk</div>
+          <div class="text-[#475467] text-sm font-medium">Buffalo milk</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Cow, Buffalo</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">20 litres</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">30 litres</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">
+            Cow milk consumption
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            Buffalo milk consumption
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            Cow milk sales rate
+          </div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">5 litres</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">5 litres</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">40 Per litre</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">
+            Buffalo milk sales rate
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            fodder/crop do you organize for livestock
+          </div>
+          <div class="text-[#475467] text-sm font-medium">Dairy products</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">60 per litres</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Graines</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">
+            Gee , Paneer, Curd
+          </p>
+        </div>
+        <div class="text-[#475467] text-sm font-medium mt-4">
+          Training in dairy products
+        </div>
+        <p class="text-[#1D2939] text-[1.125rem] font-medium mt-2">No</p>
+      </div>
+    </div>
+    <!-- Productivity - END  -->
+    <!-- Wastes & Plastics Management -->
+    <div class="my-10 mx-6 bg-white p-6 shadow-2xl rounded-2xl">
+      <div class="">
+        <div class="flex justify-between my-6">
+          <p class="text-xl font-medium text-[#1D2939]">
+            Wastes & Plastics Management
+          </p>
+          <svg
+            width="114"
+            height="34"
+            viewBox="0 0 114 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.5 10C0.5 4.75329 4.75329 0.5 10 0.5H104C109.247 0.5 113.5 4.7533 113.5 10V24C113.5 29.2467 109.247 33.5 104 33.5H10C4.7533 33.5 0.5 29.2467 0.5 24V10Z"
+              stroke="#EAECF0"
+            />
+            <path
+              d="M34 25H43"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.5 8.49998C38.8978 8.10216 39.4374 7.87866 40 7.87866C40.2786 7.87866 40.5544 7.93353 40.8118 8.04014C41.0692 8.14674 41.303 8.303 41.5 8.49998C41.697 8.69697 41.8532 8.93082 41.9598 9.18819C42.0665 9.44556 42.1213 9.72141 42.1213 9.99998C42.1213 10.2786 42.0665 10.5544 41.9598 10.8118C41.8532 11.0691 41.697 11.303 41.5 11.5L29 24L25 25L26 21L38.5 8.49998Z"
+              stroke="#046A38"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M65.024 12.852V16.116H68.864V17.604H65.024V21.012H69.344V22.5H63.2V11.364H69.344V12.852H65.024ZM70.9826 18.052C70.9826 17.1667 71.164 16.3827 71.5266 15.7C71.9 15.0173 72.4013 14.4893 73.0306 14.116C73.6706 13.732 74.38 13.54 75.1586 13.54C75.7346 13.54 76.3 13.668 76.8546 13.924C77.42 14.1693 77.868 14.5 78.1986 14.916V10.66H80.0386V22.5H78.1986V21.172C77.9 21.5987 77.484 21.9507 76.9506 22.228C76.428 22.5053 75.8253 22.644 75.1426 22.644C74.3746 22.644 73.6706 22.452 73.0306 22.068C72.4013 21.6733 71.9 21.1293 71.5266 20.436C71.164 19.732 70.9826 18.9373 70.9826 18.052ZM78.1986 18.084C78.1986 17.476 78.0706 16.948 77.8146 16.5C77.5693 16.052 77.244 15.7107 76.8386 15.476C76.4333 15.2413 75.996 15.124 75.5266 15.124C75.0573 15.124 74.62 15.2413 74.2146 15.476C73.8093 15.7 73.4786 16.036 73.2226 16.484C72.9773 16.9213 72.8546 17.444 72.8546 18.052C72.8546 18.66 72.9773 19.1933 73.2226 19.652C73.4786 20.1107 73.8093 20.4627 74.2146 20.708C74.6306 20.9427 75.068 21.06 75.5266 21.06C75.996 21.06 76.4333 20.9427 76.8386 20.708C77.244 20.4733 77.5693 20.132 77.8146 19.684C78.0706 19.2253 78.1986 18.692 78.1986 18.084ZM83.3624 12.516C83.0317 12.516 82.7544 12.404 82.5304 12.18C82.3064 11.956 82.1944 11.6787 82.1944 11.348C82.1944 11.0173 82.3064 10.74 82.5304 10.516C82.7544 10.292 83.0317 10.18 83.3624 10.18C83.6824 10.18 83.9544 10.292 84.1784 10.516C84.4024 10.74 84.5144 11.0173 84.5144 11.348C84.5144 11.6787 84.4024 11.956 84.1784 12.18C83.9544 12.404 83.6824 12.516 83.3624 12.516ZM84.2584 13.684V22.5H82.4344V13.684H84.2584ZM88.7811 15.172V20.052C88.7811 20.3827 88.8558 20.6227 89.0051 20.772C89.1651 20.9107 89.4318 20.98 89.8051 20.98H90.9251V22.5H89.4851C88.6638 22.5 88.0345 22.308 87.5971 21.924C87.1598 21.54 86.9411 20.916 86.9411 20.052V15.172H85.9011V13.684H86.9411V11.492H88.7811V13.684H90.9251V15.172H88.7811Z"
+              fill="#046A38"
+            />
+          </svg>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3">
+          <div class="text-[#475467] text-sm font-medium">
+            Source of waste management
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            Participating concept of plastic free village
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            In house presence of plastic
+          </div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Dumping truck</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Yes</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">3 KG</p>
+        </div>
+        <div class="grid gap-x-8 gap-y-2 grid-cols-3 mt-4">
+          <div class="text-[#475467] text-sm font-medium">
+            Management of solid waste and wet waste
+          </div>
+          <div class="text-[#475467] text-sm font-medium">
+            Participate in plastic and other waste recycling program
+          </div>
+          <div class="text-[#475467] text-sm font-medium">Wet waste</div>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Dumping truck</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">Yes</p>
+          <p class="text-[#1D2939] text-[1.125rem] font-medium">40 KG</p>
+        </div>
+        <div class="text-[#475467] text-sm font-medium mt-4">
+          Interested in training to set up a plastic and other waste recycling
+          industry ?
+        </div>
+        <p class="text-[#1D2939] text-[1.125rem] font-medium mt-2">No</p>
+      </div>
+    </div>
+    <!-- Wastes & Plastics Management - END  -->
+    <!-- Add Button -->
+    <div class="flex justify-center my-12">
+      <button
+        class="bg-[#046A38] text-white p-6 rounded-full flex gap-3 shadow-2xl"
+      >
+        <p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="24"
+            viewBox="0 0 25 24"
+            fill="none"
+          >
+            <path
+              d="M12.5 5V19"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M5.5 12H19.5"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </p>
+        <p class="text-[1.125rem] text-white font-medium">
+          Add New Family Member
+        </p>
+      </button>
+    </div>
+  </div>
+  <!-- End Family Profile -->
+  

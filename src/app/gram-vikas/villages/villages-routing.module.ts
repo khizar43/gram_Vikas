@@ -10,8 +10,7 @@ const routes: Routes = [
     loadChildren: () => import('../villages/villages.module').then(m => m.VillagesModule),
   },
   {
-    path: 'profile',
-    component: VillageDashboardComponent,
+    path: 'profile', component: VillageDashboardComponent,
   },
   {
     path: 'add-village',
@@ -19,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'villages-status', component:VillageStatusComponent,
+  },
+  {
+    path:'villages-dashboard', component:VillageDashboardComponent
   }
 
 

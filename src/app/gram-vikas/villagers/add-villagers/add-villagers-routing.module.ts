@@ -7,7 +7,6 @@ import { FarmingComponent } from './components/farming/farming.component';
 import { WastePlasticManagementComponent } from './components/waste-plastic-management/waste-plastic-management.component';
 import { FamilyMemberDetailsComponent } from './components/family-member-details/family-member-details.component';
 import { ProductivityComponent } from './components/productivity/productivity.component';
-import { FamilyProfileComponent } from './components/family-profile/family-profile.component';
 
 const routes: Routes = [
   { path: '', component: VillageDetailsComponent },
@@ -17,7 +16,6 @@ const routes: Routes = [
   { path: 'resources', component: ResourcesComponent },
   { path: 'waste-plastic-management', component: WastePlasticManagementComponent },
   { path: 'family-member-details', component: FamilyMemberDetailsComponent },
-  { path: 'family-profile', component: FamilyProfileComponent },
 
 ];
 

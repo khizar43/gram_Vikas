@@ -11,7 +11,7 @@ import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {

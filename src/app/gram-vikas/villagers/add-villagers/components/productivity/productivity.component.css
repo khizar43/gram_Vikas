@@ -28,14 +28,13 @@
       }
     
       /* Yes or No buttons  */
-      .active {
-        background-color: #046A38; /* Change the color as needed */
+      button {
+        margin-right: 10px;
+      }
+      
+      button.active {
+        background-color: #046a38;
         color: white;
       }
       
-      .inactive {
-        background-color: #046A38; /* Change the color as needed */
-        color: white;
-      }
-
       

@@ -1,5 +1,5 @@
 <div>
-  <div class=" text-[#1D2939] mt-4 mx-4 flex ">
+  <div class=" text-[#1D2939] mt-4 mx-4 flex " routerLink="/home">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M19 12H5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       <path d="M12 19L5 12L12 5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -173,16 +173,16 @@
           </div>
         </div>
       </div>
-      <div class="mt-8">
       
-      <footer class=" w-full body-font  h-fit  bg-white  sticky bottom-0 mb-0">
-        <div
-          class="  w-full flex md:items-center lg:items-center lg:justify-center   md:flex-row md:flex-nowrap flex-wrap flex-col">
-
+    </form>
+    <div class="mt-24">
+      <!-- footer -->
+      <footer class=" w-full body-font  h-fit  bg-white  fixed bottom-0 mb-0">
+        <div class=" w-full flex md:items-center lg:items-center lg:justify-center md:flex-row md:flex-nowrap flex-wrap flex-col">
           <div class="my-9 md:mx-16  flex items-center ">
             <!-- progress bar -->
             <div>
-              <div class="relative w-full h-16">
+              <div class="relative w-full h-16 ml-9">
                 <svg class="w-full h-full" viewBox="0 0 100 100">
                   <!-- Background circle -->
                   <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
@@ -195,14 +195,13 @@
                   <!-- Center text -->
                   <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
                     alignment-baseline="middle">0%</text>
-
                 </svg>
               </div>
-              <p class="text-[#475467] font-medium">Progress</p>
+              <p class="text-[#475467] font-medium ml-14">Progress</p>
             </div>
             <div class="">
-              <button routerLink="/villagers/family-Details" class="flex border ml-4 rounded-lg w-96 py-3 bg-[#14644A] items-center justify-center space-x-2 text-white">
-
+              <button routerLink="/villagers/family-Details"
+                class="flex border ml-8 rounded-lg w-96 py-3 bg-[#14644A] items-center justify-center space-x-2 text-white">
                 <p class="text-white ">Proceed</p>
                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -210,11 +209,10 @@
                   <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
                     stroke-linejoin="round" />
                 </svg>
-
               </button>
             </div>
           </div>
         </div>
-
       </footer>
     </div>
+  </div>

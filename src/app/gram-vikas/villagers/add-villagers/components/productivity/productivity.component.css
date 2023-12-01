@@ -1,8 +1,6 @@
  /* input fields */
  select {
-    border: 1 !important;
-    /* background-color: white; */
-    /* needed */
+    border: 1 !important;    /* needed */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -28,14 +26,13 @@
       }
     
       /* Yes or No buttons  */
-      .active {
-        background-color: #046A38; /* Change the color as needed */
+      button {
+        margin-right: 10px;
+      }
+      
+      button.active {
+        background-color: #046a38;
         color: white;
       }
       
-      .inactive {
-        background-color: #046A38; /* Change the color as needed */
-        color: white;
-      }
-
       

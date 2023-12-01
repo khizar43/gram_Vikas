@@ -8,13 +8,30 @@ import { Component } from '@angular/core';
 export class ProductivityComponent {
 
 
-showformData: boolean = false;
+// show or hide the Productivity  FarmData
+  showformDataYes: boolean = false;
+  showformDataNo: boolean = false;
+  
+  //  show Productivity Form Data
+   formDataVisibilityYes() {
+      this.showformDataYes = !this.showformDataYes;
+      this.showformDataNo = false;
+      this.activeButton;    //currently activeButton
+    }
+  //  hide Productivity Form Data
+    formDataVisibilityNo() {
+      this.showformDataNo = !this.showformDataNo;
+      this.showformDataYes = false;
+      this.activeButton;    //currently activeButton
+    }
+  
+  // Active Buttons
+  activeButton: number = 0;
+  
+  // Set the activeButton property to the provided buttonNumber value
 
-//  Farming Form Data
- formDataVisibility() {
-    this.showformData = !this.showformData;
+  setActiveButton(buttonNumber: number) {
+    this.activeButton = buttonNumber;
   }
-
-
 
 }

@@ -1,8 +1,6 @@
  /* input fields */
  select {
-    border: 1 !important;
-    /* background-color: white; */
-    /* needed */
+    border: 1 !important;    /* needed */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;

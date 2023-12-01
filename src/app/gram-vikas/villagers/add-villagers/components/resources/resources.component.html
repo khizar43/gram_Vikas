@@ -170,22 +170,57 @@
       ">
       <div class="m-6 bg-white w-full">
         <div class="flex">
-          <div class="mr-2 w-1/5 bg-white">
+          <!-- <div class="mr-2 w-1/5 bg-white">
             <div class="font-semibold" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
               style="--value: 75"></div>
             <div class="text-[#475467] text-[7px] font-normal mt-1">
               Progress
             </div>
+          </div> -->
+          <div>
+            <div class="relative w-20 h-16">
+              <svg class="w-full h-full" viewBox="0 0 100 100">
+                <!-- Background circle -->
+                <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40" fill="transparent">
+                </circle>
+                <!-- Progress circle -->
+                <circle class="text-[#046A38]  progress-ring__circle stroke-current" stroke-width="10"
+                  stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                  stroke-dashoffset="calc(400 - (400 * 15) / 100)"></circle>
+    
+                <!-- Center text -->
+                <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                  alignment-baseline="middle">75%</text>
+    
+              </svg>
+            </div>
+            <p class="text-[#475467] font-medium">Progress</p>
           </div>
           <div class="mx-5 w-full bg-white">
             <div class="flex justify-between-center gap-11">
-            <button type="submit"  [ngStyle]=""
+            <!-- <button type="submit"  [ngStyle]=""
             
               class="border-[#046A38] border-2 bg-gray-400 focus:bg-green-600 active:bg-green-600 text-base font-medium text-white w-full rounded-md h-14 shadow-xl">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left h-6 w-6 inline-block ml-2 gap-2"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l4 4" /><path d="M5 12l4 -4" /></svg>
               Previous
               
-            </button>
+            </button> -->
+
+
+            <button type="submit"
+            [ngStyle]=""
+            class="border-[#046A38] border-2 focus:bg-green-600 active:bg-green-600 text-base font-medium text-white w-full rounded-md h-14 shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left h-6 w-6 inline-block ml-2" viewBox="0 0 24 24" stroke-width="2" stroke="#046A38" fill="#046A38" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 12l14 0" />
+              <path d="M5 12l4 4" />
+              <path d="M5 12l4 -4" />
+          </svg>
+          
+        <span class="ml-2 text-[#046A38]">Previous</span>
+    </button>
+    
+
             <button type="submit"  [ngStyle]=""
             class="border-[#046A38] border-2 bg-gray-400 focus:bg-green-600 active:bg-green-600 text-base font-medium text-white w-full rounded-md h-14 shadow-xl">
             Proceed

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class UploadVillagePhotoComponent {
 
+
+  show = false;
+
+  showAlert() {
+    this.show = true;
+  }
 }

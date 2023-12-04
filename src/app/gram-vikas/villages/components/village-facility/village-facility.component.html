@@ -1,6 +1,6 @@
 <div class="bg-[#FCFCFD] mx-2">
     <div  class=" mt-4 ml-4 flex ">
-        <div routerLink="/dashboard/add-village">
+        <div routerLink="/villages/add-village">
             <svg
             width="24"
             height="24"
@@ -80,10 +80,10 @@
             </svg>
           </div>
   
-          <div class="ml-4">
-            <div class="flex">
+          <div class="ml-4 w-full">
+            <div class="flex justify-between">
               <p class="text-white">Request For Form Update</p>
-              <div class="">
+              <div class="mr-4">
                 <svg
                   width="24"
                   height="24"
@@ -114,9 +114,9 @@
           <div>
               <p class="font-semibold  mt-3">Village Facilities</p>
           </div>
-          <div class="w-full space-x-2 mt-8 flex">
+          <div class="w-full space-x-2  mt-8 flex">
               <div class="w-6/12">
-                <p>Which water facility is available in the village?</p>
+                <p class="font-medium">Which water facility is available in the village?</p>
                   <select class="" id="myDropdown" name="myDropdown">
                       <option value="" disabled selected>eg:Well/River</option>
                       <option value="option1">Well</option>
@@ -126,7 +126,7 @@
                   </select>
               </div>
               <div class="w-6/12 mr-8">
-                <p>Name of the Water supply Institute</p>
+                <p class="font-medium">Name of the Water supply Institute</p>
                   <select class="w-4/5" id="myDropdown" name="myDropdown">
                       <option value="" disabled selected>eg:PWD</option>
                       <option value="option1">Water supply</option>
@@ -138,40 +138,40 @@
           </div>
           <div class="w-full space-x-2  mt-12 flex">
               <div class="w-6/12">
-                  <p>Total Number of general stores in the village</p>
+                  <p class="font-medium">Total Number of general stores in the village</p>
                   <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
               </div>
               <div class=" w-6/12 mr-8">
-                <p>Grain shop in the village?</p>
+                <p class="font-medium">Grain shop in the village?</p>
                 <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
               </div>
               
           </div>
           <div class=" w-full space-x-2  mt-12 flex">
             <div class="w-6/12">
-                <p>How many processing industries are there in the village. ?</p>
+                <p class="font-medium">How many processing industries are there in the village. ?</p>
                 <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
             </div>
             <div class=" w-6/12 ">
-              <p>How many women-led industries are there in the village?</p>
+              <p class="font-medium">How many women-led industries are there in the village?</p>
               <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
             </div>
               
           </div>
           <div class=" w-full space-x-2  mt-12 flex">
             <div class="w-6/12">
-                <p>F.P.O. / Co. in the village. Op. Society/Milk Society</p>
+                <p class="font-medium">F.P.O. / Co. in the village. Op. Society/Milk Society</p>
                 <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
             </div>
             <div class=" w-6/12 mr-8">
-              <p>How many temples are there?</p>
+              <p class="font-medium">How many temples are there?</p>
               <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
             </div>
               
           </div>
           <div class=" w-full space-x-2  mt-12 flex">
             <div class="w-full ">
-                <p>How many government/private clinics/medical shops are there in the village?</p>
+                <p class="font-medium">How many government/private clinics/medical shops are there in the village?</p>
                 <div class="flex w-full space-x-4">
                     <input class=" w-1/2 border-2 bg-white" placeholder="eg:435">
                     <select class="w-1/3 mr-4" id="myDropdown" name="myDropdown">
@@ -198,7 +198,7 @@
 
         <div class=" w-full space-x-2  mt-14 flex">
             <div class="w-6/12">
-                <p>There is a nearby road connecting the village</p>
+                <p class="font-medium">There is a nearby road connecting the village</p>
                 <div class="flex items-center mb-4">
                     <div class="w-1/3 flex space-x-2">
                         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -212,38 +212,7 @@
                 </div>
             </div>
             <div class="w-6/12">
-                <p>Is Primary School there?</p>
-                <div class="flex items-center mb-4">
-                    <div class="w-1/3 flex space-x-2">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
-                    </div>
-                    <div class="w-1/3 flex space-x-2">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
-                    </div>
-                    
-                </div>
-            </div>
-              
-          </div>
-          <div class=" w-full space-x-2  mt-12 flex">
-            <div class="w-6/12">
-                <p>Is there a anganwadi in the Village?</p>
-                <div class="flex items-center mb-4">
-                    <div class="w-1/3 flex space-x-2">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
-                    </div>
-                    <div class="w-1/3 flex space-x-2">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
-                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="w-6/12">
-                <p>Is there any college or Institute</p>
+                <p class="font-medium">Is Primary School there?</p>
                 <div class="flex items-center mb-4">
                     <div class="w-1/3 flex space-x-2">
                         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -260,11 +229,42 @@
           </div>
           <div class=" w-full space-x-2  mt-12 flex">
             <div class="w-6/12">
-                <p>What is the number of self help groups in the village</p>
+                <p class="font-medium">Is there a anganwadi in the Village?</p>
+                <div class="flex items-center mb-4">
+                    <div class="w-1/3 flex space-x-2">
+                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
+                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                    </div>
+                    <div class="w-1/3 flex space-x-2">
+                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
+                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="w-6/12">
+                <p class="font-medium">Is there any college or Institute</p>
+                <div class="flex items-center mb-4">
+                    <div class="w-1/3 flex space-x-2">
+                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
+                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
+                    </div>
+                    <div class="w-1/3 flex space-x-2">
+                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
+                        <label for="default-checkbox" class=" text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
+                    </div>
+                    
+                </div>
+            </div>
+              
+          </div>
+          <div class=" w-full space-x-2  mt-12 flex">
+            <div class="w-6/12">
+                <p class="font-medium">What is the number of self help groups in the village</p>
                 <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
             </div>
             <div class="w-6/12">
-                <p>Is there an electric Connection</p>
+                <p class="font-medium">Is there an electric Connection</p>
                 <div class="flex items-center mb-4">
                     <div class="w-1/3 flex space-x-2">
                         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -281,7 +281,7 @@
           </div>
           <div class=" w-full space-x-2  mt-12 flex">
             <div class="w-6/12">
-                <p>Is there any Post office </p>
+                <p class="font-medium">Is there any Post office </p>
                 <div class="flex items-center mb-4">
                     <div class="w-1/3 flex space-x-2">
                         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -295,7 +295,7 @@
                 </div>
             </div>
             <div class="w-6/12">
-                <p>Is any there Bank Office</p>
+                <p class="font-medium">Is any there Bank Office</p>
                 <div class="flex items-center mb-4">
                     <div class="w-1/3 flex space-x-2">
                         <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -312,7 +312,7 @@
           </div>
           <div class="w-full space-x-2 mt-8 flex">
             <div class="w-6/12">
-              <p>Which day are we having market in village?</p>
+              <p class="font-medium">Which day are we having market in village?</p>
                 <select class="w-4/5" id="myDropdown" name="myDropdown">
                     <option value="" selected>Sunday</option>
                     <option value="option1">Monday</option>
@@ -322,7 +322,7 @@
                 </select>
             </div>
             <div class="w-6/12">
-              <p>Is there a Governmental Primary Health Centre/Sub-Centre</p>
+              <p class="font-medium">Is there a Governmental Primary Health Centre/Sub-Centre</p>
               <div class="flex items-center mb-4">
                   <div class="w-1/3 flex space-x-2">
                       <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -339,7 +339,7 @@
         </div>
         <div class=" w-full space-x-2  mt-12 flex">
           <div class="w-6/12">
-              <p>Is there an Animal hospital in the village? </p>
+              <p class="font-medium">Is there an Animal hospital in the village? </p>
               <div class="flex items-center mb-4">
                   <div class="w-1/3 flex space-x-2">
                       <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -353,7 +353,7 @@
               </div>
           </div>
           <div class="w-6/12">
-              <p>Is there an industrial estate in the village?</p>
+              <p class="font-medium">Is there an industrial estate in the village?</p>
               <div class="flex items-center mb-4">
                   <div class="w-1/3 flex space-x-2">
                       <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -370,7 +370,7 @@
         </div>
         <div class=" w-full space-x-2  mt-12 flex ">
           <div class="w-6/12">
-              <p>Is defecation a fit? </p>
+              <p class="font-medium">Is defecation a fit? </p>
               <div class="flex items-center mb-4">
                   <div class="w-1/3 flex space-x-2">
                       <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text--600 bg-gray-100 border-gray-300 rounded focus:ring-green-500 dark:focus:ring-green-600 ">
@@ -384,7 +384,7 @@
               </div>
           </div>
           <div class="w-6/12">
-              <p>What is the distance of the village form the industrial estate?(Km)</p>
+              <p class="font-medium">What is the distance of the village form the industrial estate?(Km)</p>
               <input class="w-4/5 border-2 bg-white" placeholder="eg:435">
           </div>
             
@@ -399,7 +399,7 @@
 
     <div class="progress-bar  mt-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
     <div class="flex w-8/12 space-x-4">
-      <button class="w-6/12 border-green-900 border-4   h-3/5 text-green-700 mt-3 rounded-md" routerLink="/dashboard/village-facility">
+      <button class="w-6/12 border-green-900 border-4   h-3/5 text-green-700 mt-3 rounded-md" routerLink="/villages/add-village">
         <div class="flex justify-center space-x-2">
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M19.1841 12.3419H5.18408" stroke="#046A38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -409,7 +409,7 @@
           <p>Previous</p>
         </div>
         </button>
-      <button routerLink="/dashboard/upload-village-photo" class="w-6/12 bg-green-800 h-3/5 text-white mt-3 rounded-md" >
+      <button routerLink="/villages/upload-village-photo" class="w-6/12 bg-green-800 h-3/5 text-white mt-3 rounded-md" >
         <div class="flex justify-center space-x-2">
           <p>Proceed</p>
           <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

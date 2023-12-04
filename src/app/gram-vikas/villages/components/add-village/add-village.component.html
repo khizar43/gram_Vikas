@@ -1,4 +1,4 @@
-<div>
+<div class="mx-3">
   <div class=" mt-4 ml-4 flex">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M19 12H5" stroke="#1D2939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -49,107 +49,146 @@
         </div>
       </div>
     </div>
-    <form class="ml-12 mb-32">
-      <div>
-        <p class="font-semibold  mt-3">About the village</p>
-      </div>
-      <div class="w-full  mt-8 flex">
-        <div class="w-6/12">
-          <select class="" id="myDropdown" name="myDropdown">
-            <option value="" disabled selected>State name</option>
-            <option value="option1">Maharashtra</option>
-            <option value="option2">Andhra Pradesh</option>
-            <option value="option3">Karnataka</option>
-            <option value="option4">New Delhi</option>
-          </select>
-        </div>
-        <div class="w-6/12 mr-8">
-          <select class="" id="myDropdown" name="myDropdown">
-            <option value="" disabled selected>Village name</option>
-            <option value="option1">Amgaon</option>
-            <option value="option2">Salekasa</option>
-            <option value="option3">Arjuni Morgaon</option>
-            <option value="option4">Basmath</option>
-          </select>
-        </div>
-
-      </div>
-      <div class="w-full  mt-12 flex">
-        <div class="w-6/12">
-          <select class="" id="myDropdown" name="myDropdown">
-            <option value="" disabled selected>Grampanchayat name</option>
-            <option value="option1">ANTRGAON</option>
-            <option value="option2">ARAMBA</option>
-            <option value="option3">DAHEGAON</option>
-            <option value="option4">GOVINDPUR</option>
-          </select>
-        </div>
-        <div class=" w-6/12 mr-8">
-          <select class="" id="myDropdown" name="myDropdown">
-            <option value="" disabled selected>Taluka name</option>
-            <option value="option1">Deoli</option>
-            <option value="option2">Ashti</option>
-            <option value="option3">Samudrapur</option>
-            <option value="option4">Karanja</option>
-          </select>
-        </div>
-
-      </div>
-      <div class=" w-full  mt-12 flex">
-        <div class="w-6/12">
-          <select class="" id="myDropdown" name="myDropdown">
-            <option class="text-sm" value="" disabled selected>District name</option>
-            <option value="option1">Pune</option>
-            <option value="option2">Nashik</option>
-            <option value="option3">Nagpur</option>
-            <option value="option4">Kolhapur</option>
-          </select>
-        </div>
-        <div class="mr-8 w-6/12">
-          <p class="flex-wrap font-medium">Total Population of Village ?</p>
-          <input placeholder="eg:340 " class=" ">
-        </div>
-
-      </div>
-      <div class=" w-full mt-12 flex">
-        <div class="mr-8 w-6/12 ">
-          <p class="font-medium">Total Family Number</p>
-          <input placeholder="eg:340 " class="w-8/12 ">
-        </div>
-        <div class="mr-8 w-6/12">
-          <p class="font-medium">Total Area of Village ? (Hectare)</p>
-          <input placeholder="eg:340 " class="w-8/12 ">
-        </div>
-      </div>
-      <div class=" w-full mt-12 flex">
-        <div class="mr-8 w-6/12 ">
-          <p class="font-medium">Total Area Under Cultivation (Hectare)</p>
-          <input placeholder="eg:340 " class="w-8/12 ">
-        </div>
-        <div class="mr-8 w-6/12">
-          <p class="font-medium">The total area under non-plantation of the village?</p>
-          <input placeholder="eg:340 " class="w-8/12 ">
-        </div>
-      </div>
-      <div class="mr-8 w-6/12 mt-12 ">
-        <p class="font-medium">What land was used for cultivation of the village?</p>
-        <input placeholder="eg:340 " class="w-8/12 ">
-      </div>
-    </form>
+    
 
   </div>
-  <div class="w-full fixed bottom-0 left-0 h-[5rem]  flex space-x-6 mt-6 bg-white border-t-2 justify-center">
-    <div class="progress-bar ml-6 mt-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-    <button routerLink="/villages/village-facility" class="w-7/12 bg-green-800 h-3/5 text-white mt-3 rounded-md" >
-      <div class="flex justify-center space-x-2">
-        <p>Proceed</p>
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5.18408 12.3419H19.1841" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12.1841 5.34192L19.1841 12.3419L12.1841 19.3419" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          
+  <form class="mx-5 md:mx-48 h-full">
+    <div>
+      <p class="font-semibold text-[#1D2939] text-2xl mt-4 ">Village Details</p>
+    </div>
+
+    <div class="w-full mb-4 mt-8 flex flex-col md:flex-row gap-x-5">
+      <div class=" w-full ">
+        <select class="border rounded-lg w-full pl-3 h-10" id="myDropdown" name="myDropdown">
+          <option value="" disabled selected>State Name</option>
+          <option value="option1">Maharashtra</option>
+          <option value="option2">Andhra Pradesh</option>
+          <option value="option3">Karnataka</option>
+          <option value="option4">New Delhi</option>
+        </select>
       </div>
-    </button>
+      <div class="w-full">
+        <select class="border rounded-lg w-full pl-3 h-10" id="myDropdown" name="myDropdown">
+          <option value="" disabled selected>Village Name</option>
+          <option value="option1">Kaneri</option>
+          <option value="option2">Ekondi</option>
+          <option value="option3">Kaneriwadi</option>
+        </select>
+      </div>
+    </div>
+
+
+    <div class="w-full mb-4 mt-8 flex flex-col md:flex-row gap-x-5">
+      <div class=" w-full ">
+        <select class="border rounded-lg w-full pl-3 h-10" id="myDropdown" name="myDropdown">
+          <option value="" disabled selected>Grampanchayat Name</option>
+          <option value="option1">Kolhapur</option>
+          <option value="option2">Sangola</option>
+          <option value="option3">Karveer</option>
+        </select>
+      </div>
+      <div class="w-full">
+        <select class="border rounded-lg w-full pl-3 h-10" id="myDropdown" name="myDropdown">
+          <option value="" disabled selected>Taluka Name</option>
+          <option value="option1"></option>
+          <option value="option2">Kolhapur</option>
+          <option value="option3">Pune</option>
+          <option value="option4">Satara</option>
+        </select>
+      </div>
+    </div>
+    <div class="w-full mb-4 mt-8 flex flex-col md:flex-row gap-x-5">
+      <div class=" w-full ">
+        <select class="border rounded-lg w-full pl-3 h-10" id="myDropdown" name="myDropdown">
+          <option value="" disabled selected>District Name</option>
+          <option value="option1">Kolhapur</option>
+          <option value="option2">Sangola</option>
+          <option value="option3">Karveer</option>
+        </select>
+      </div>
+      <div class=" w-full">
+        <p class="flex-wrap text-gray-800 font-semibold">Total number of Village ?</p>
+        <span class="">
+          <input placeholder="eg:8865 " class="border rounded-lg pl-3 w-full h-10 gap-2 mt-2">
+        </span>
+      </div>
+    </div>
+    <div class="w-full mb-4 mt-8 flex flex-col md:flex-row gap-x-5">
+      <div class=" w-full">
+        <p class="flex-wrap text-gray-800 font-semibold">Total Family Member</p>
+        <span class="">
+          <input placeholder="eg:8865 " class="border rounded-lg w-full pl-3 h-10 gap-2 mt-2">
+        </span>
+      </div>
+      <div class=" w-full">
+        <p class="flex-wrap text-gray-800 font-semibold">Total Area Of Village ? (Hectare)</p>
+        <span class="">
+          <input placeholder="eg:8865 " class="border rounded-lg w-full pl-3 h-10 gap-2 mt-2">
+        </span>
+      </div>
+    </div>
+    <div class="w-full mb-4 mt-8 flex flex-col md:flex-row gap-x-5">
+      <div class=" w-full">
+        <p class="flex-wrap text-gray-800 font-semibold">Total Area Under cultivation (Hectare)</p>
+        <span class="">
+          <input placeholder="eg:8865 " class="border rounded-lg w-full pl-3 h-10 gap-2 mt-2">
+        </span>
+      </div>
+      <div class=" w-full">
+        <p class="flex-wrap text-gray-800 font-semibold">The total area under non-plantation of the village?</p>
+        <span class="">
+          <input placeholder="eg:8865 " class="border rounded-lg w-full pl-3 h-10 gap-2 mt-2">
+        </span>
+      </div>
+    </div>
+    <div class="w-full mb-4 mt-8 flex flex-col md:flex-row gap-x-5">
+      <div class=" w-6/12">
+        <p class="flex-wrap text-gray-800 font-semibold">What land was used for cultivation of the village?</p>
+        <span class="">
+          <input placeholder="eg:Cow Shed" class="border rounded-lg w-full pl-3 h-10 gap-2 mt-2">
+        </span>
+      </div>
+      
+    </div>
+
+  </form>
+  <div class="mt-52 w-full">
+    <!-- footer -->
+    <footer class=" w-full body-font justify-center h-fit  bg-white  fixed bottom-0 left-0 mb-0">
+      <!-- <div
+        class=" w-full flex justify-center flex-wrap flex-col">
+        <div class="my-9 md:mx-16  flex items-center ">
+          
+          <div class="progress-bar  mt-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="w-8/12">
+            <button routerLink="/villages/village-facility"
+              class="flex border w-6/12 ml-8 rounded-lg  py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center space-x-2 text-white">
+              <p class="text-white ">Proceed</p>
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div> -->
+      <div class="w-full fixed bottom-0 left-0 h-[5rem]  flex space-x-6 mt-6 bg-white border-t-2 justify-center">
+        <div class="progress-bar ml-6 mt-3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <button routerLink="/villages/village-facility" class="w-7/12 hover:bg-[#14644A] bg-gray-400 h-3/5 text-white mt-3 rounded-md" >
+          <div class="flex justify-center space-x-2">
+            <p>Proceed</p>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.18408 12.3419H19.1841" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12.1841 5.34192L19.1841 12.3419L12.1841 19.3419" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+          </div>
+        </button>
+
+      </div>
+
+    </footer>
   </div>
   </div>
   

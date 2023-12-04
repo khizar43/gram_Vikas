@@ -295,12 +295,12 @@
 <!-- footer -->
 <footer class=" body-font  h-fit  bg-white  fixed  bottom-0 inset-x-0">
     <div
-        class=" flex md:items-center lg:items-center lg:justify-center   md:flex-row md:flex-nowrap flex-wrap flex-col">
+        class=" flex md:items-center lg:items-center lg:justify-center  md:flex-row md:flex-nowrap flex-wrap flex-col">
 
-        <div class="my-9 md:mx-16  flex items-center  space-x-6 flex-shrink-0 ">
+        <div class="my-9 md:mx-16  flex items-center  px-6 gap-x-6 flex-shrink-0 ">
             <!-- progress bar -->
-            <div>
-                <div class="relative w-20 h-16">
+            <div class="hidden sm:block">
+                <div class="relative w-20 h-16 " >
                     <svg class="w-full h-full" viewBox="0 0 100 100">
                         <!-- Background circle -->
                         <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
@@ -318,9 +318,9 @@
                 </div>
                 <p class="text-[#475467] font-medium">Progress</p>
             </div>
-            <div class="">
+            <div class=" " >
                 <button routerLink="/villagers/family-Details"
-                    class="flex  rounded-lg w-64 py-3 items-center justify-center space-x-2 border-[#046A38] border-2">
+                    class="flex  rounded-lg w-36 md:w-64 py-3 items-center justify-center space-x-2 border-[#046A38] border-2 sm:w-2/5 ">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5 12H5.5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
@@ -332,7 +332,7 @@
             </div>
             <div class="">
                 <button routerLink="/villagers/productivity"
-                    class="flex border rounded-lg w-64 py-3 bg-[#14644A] items-center justify-center space-x-2 text-white">
+                    class="flex border rounded-lg w-36 md:w-64 py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center space-x-2 text-white sm:w-2/5 ">
 
                     <p class="text-white ">Proceed</p>
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -346,6 +346,5 @@
             </div>
         </div>
     </div>
-
 </footer>
 <!-- End -->

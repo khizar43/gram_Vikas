@@ -91,7 +91,7 @@
   "families": [
     {
       "id": 1,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Rajbeer.png",
       "person_name": "Rajbeer",
       "person_position": "HOF",
       "person_status": "Published",
@@ -103,7 +103,7 @@
     },
     {
       "id": 2,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Mahesh.png",
       "person_name": "Mahesh",
       "person_position": "HOF",
       "person_status": "Published",
@@ -115,7 +115,7 @@
     },
     {
       "id": 3,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Ramjesh.png",
       "person_name": "Ramjesh",
       "person_position": "HOF",
       "person_status": "Published",
@@ -127,7 +127,7 @@
     },
     {
       "id": 4,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/kamaljeet.png",
       "person_name": "Kamljeet",
       "person_position": "HOF",
       "person_status": "Published",
@@ -139,7 +139,7 @@
     },
     {
       "id": 5,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Ramatar.png",
       "person_name": " Ramotar",
       "person_position": "HOF",
       "person_status": "Published",
@@ -151,7 +151,7 @@
     },
     {
       "id": 6,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Sunil.png",
       "person_name": "Sunil Datt",
       "person_position": "HOF",
       "person_status": "Published",
@@ -163,7 +163,7 @@
     },
     {
       "id": 7,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Savita.png",
       "person_name": "Savita",
       "person_position": "HOF",
       "person_status": "Published",
@@ -175,7 +175,7 @@
     },
     {
       "id": 8,
-      "photo": "https://picsum.photos/200/300",
+      "photo": "./assets/Images/Family_Profiles/Karthik.png",
       "person_name": "Kartik",
       "person_position": "HOF",
       "person_status": "Published",

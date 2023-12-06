@@ -11,7 +11,7 @@ COPY . /app/
 #prepare the container for building react
 
 RUN npm cache clean --force
-RUN npm install -g npm@9.5.1
+RUN npm install -g npm@15.2.10
 RUN npm install --force
 # RUN npm install react-search-field --save
 RUN npm run build

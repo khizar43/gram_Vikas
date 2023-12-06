@@ -1,3 +1,4 @@
+# Author: Vishal B
 # pull official base image
 #FROM node:14-alpine3.12 as build
 FROM node:16.14.0-alpine3.14 as build
@@ -10,17 +11,14 @@ COPY . /app/
 
 #prepare the container for building react
 
-RUN npm cache clean --force
-RUN npm install -g npm@9.5.1
-RUN npm install --force
+RUN npm install
 # RUN npm install react-search-field --save
 RUN npm run build
-
 
 #prepare nginx
 
 FROM nginx:1.16.0-alpine
-COPY --from=build /app/dist/recruiter_module /usr/share/nginx/html
+COPY --from=build /app/dist/gramvikas-pwa /usr/share/nginx/html
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx/nginx.conf /etc/nginx/conf.d
 

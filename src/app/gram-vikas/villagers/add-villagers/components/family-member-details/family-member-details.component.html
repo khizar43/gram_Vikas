@@ -109,7 +109,7 @@
     </div>
     <div></div>
     <form class="mx-5 md:mx-48">
-      <div>
+      <div class="my-9">
         <p class="font-semibold text-[#1D2939] text-2xl mt-3">
           Family Member details
         </p>
@@ -208,58 +208,56 @@
           </label>
         </div>
       </div>
-
-      <div class="w-full mt-12 flex flex-col md:flex-row">
+      <div class="w-full mt-4 flex flex-col md:flex-row">
         <div class="mb-4 md:mr-4 w-full lg:mr-16">
           <p class="text-[#1D2939] font-medium text-md">FullName</p>
           <input
-            class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800"
+            class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800 mt-2"
             placeholder="Kushi"
           />
         </div>
         <div class="w-full">
           <p class="text-[#1D2939] text-md font-medium">Gender</p>
-          <select class="border rounded-lg w-full h-10 pl-2">
+          <select class="border rounded-lg w-full h-10 pl-2 mt-2">
             <option>Female</option>
           </select>
         </div>
       </div>
-
-      <div class="w-full mt-8 flex flex-col md:flex-row pb-12 gap-5">
+   
+      <div class="w-full mt-2 flex flex-col md:flex-row pb-12 gap-5">
         <div class="w-full">
           <p class="text-[#1D2939] text-md font-medium">Education</p>
-          <select class="border rounded-lg w-full h-10 pl-2">
+          <select class="border rounded-lg w-full h-10 pl-2 mt-2">
             <option>6th</option>
           </select>
         </div>
         <div class="w-full ml-0 md:ml-2.5">
           <p class="text-[#1D2939] text-md font-medium">Occupation</p>
-          <select class="border rounded-lg w-full h-10 pl-2">
+          <select class="border rounded-lg w-full h-10 pl-2 mt-2">
             <option>Student</option>
           </select>
         </div>
       </div>
-
-      <div class="w-full flex flex-col md:flex-row">
+      <div class="w-full -mt-4 flex flex-col md:flex-row">
         <div class="mb-4 md:mr-4 w-full lg:mr-16">
           <p class="text-[#1D2939] font-medium text-md">Aadhar number</p>
           <input
-            class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800"
+            class="w-full h-10 border rounded-lg pl-2 placeholder-gray-800 mt-2"
             placeholder="444118866325"
           />
         </div>
         <div class="w-full">
           <p class="text-[#1D2939] text-md font-medium">Bank Account Type</p>
-          <select class="border rounded-lg w-full h-10 pl-2">
+          <select class="border rounded-lg w-full h-10 pl-2 mt-2">
             <option>Saving</option>
           </select>
         </div>
       </div>
-      <div class="w-full flex flex-col md:flex-row pb-64">
+      <div class="w-full mt-2 flex flex-col md:flex-row pb-64">
         <div class="w-full">
           <p class="text-[#1D2939] text-md font-medium">Job-card</p>
           <div class="flex mt-2">
-            <div class="flex items-center me-4">
+            <div class="flex items-center me-4 mt-2">
               <input
                 id="inline-checkbox"
                 type="checkbox"
@@ -272,7 +270,7 @@
                 >Yes</label
               >
             </div>
-            <div class="flex items-center me-4">
+            <div class="flex items-center me-4 mt-2">
               <input
                 id="inline-2-checkbox"
                 type="checkbox"
@@ -353,18 +351,10 @@
             <button routerLink="/waste-plastic-management"
               type="submit"
               [ngStyle]=""
-              class="border-[#046A38] border-2  hover:bg-[#14644A]  active:bg-[#14644A] text-base font-medium text-white w-full rounded-md h-14 shadow-xl"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-arrow-narrow-left h-6 w-6 inline-block ml-2"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="#046A38"
-                fill="#046A38"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+              class="border-[#046A38] border-2 focus:bg-gray-400 active:bg-gray-400 text-base font-medium text-white w-full rounded-md h-14">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-arrow-narrow-left h-6 w-6 inline-block ml-2" viewBox="0 0 24 24"
+                stroke-width="2" stroke="#046A38" fill="#046A38" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M5 12l14 0" />
                 <path d="M5 12l4 4" />
@@ -377,7 +367,7 @@
             <button routerLink="/home"
               type="submit"
               [ngStyle]=""
-              class=" border-2 bg-gray-400  hover:bg-[#046A38]  active:bg-[#14644A] text-base font-medium text-white w-full rounded-md h-14 shadow-xl"
+              class=" border-2 bg-gray-400  hover:bg-[#046A38]  active:bg-[#14644A] text-base font-medium text-white w-full rounded-md h-14 "
             >
             Skip & Proceed
               <svg

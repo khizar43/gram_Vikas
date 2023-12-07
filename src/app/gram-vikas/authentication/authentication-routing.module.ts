@@ -7,10 +7,7 @@ import { LandingComponent } from './components/landing/landing.component';
 import { LoginOtpComponent } from './components/login-otp/login-otp.component';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { NewPasswordComponent } from './components/new-password/new-password.component';
-import { DashboardComponent } from '../analytics/components/dashboard/dashboard.component';
 import { HomeComponent } from '../dashboard/components/home/home.component';
-import { VillageStatusComponent } from '../villages/components/village-status/village-status.component';
-import { VillagersStatusComponent } from '../villagers/components/villagers-status/villagers-status.component';
 
 const routes: Routes = [
   { path: '', component: SplashScreenComponent },
@@ -21,18 +18,7 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'newpassword', component: NewPasswordComponent },
   { path: 'home', component: HomeComponent },
-  {
-    path: 'status',
-    component: VillageStatusComponent,
-  },
-  {
-    path: 'familyStatus',
-    component: VillagersStatusComponent,
-  },
-
-
-
-];
+  ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

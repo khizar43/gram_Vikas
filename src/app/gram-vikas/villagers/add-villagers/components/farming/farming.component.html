@@ -1,4 +1,3 @@
-<!-- start  -->
 <div class="bg-[#F8F9FC] py-4 lg:px-24">
     <div routerLink="/villagers/family-Details" class="px-8 flex items-center">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,17 +30,17 @@
                             fill="#344054" />
                     </svg>
                 </div>
-<!-- Request From update -->
-                <div class="px-2 w-full">
-                    <div class="flex justify-between px-2 ">
+
+                <div class="px-2  w-full">
+                    <div class="flex justify-between px-2  w-full">
                         <p class="text-white">Request For Form Update</p>
-                        <button class="">
+                        <div class="">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
-                        </button>
+                        </div>
                     </div>
 
                     <div class="ml-2 mt-3">
@@ -57,7 +56,7 @@
 
         <div>
             <div>
-                <p class=" font-medium text-[1.5rem] text-[#1D2939] mt-3">Farming</p>
+                <p class=" font-medium text-[1.5rem] text-[#1D2939] my-9">Farming</p>
             </div>
             <div class="mt-9 ">
                 <p class="text-[#1D2939]  font-medium text-[1rem]">Do you do farming?</p>
@@ -75,53 +74,52 @@
         </div>
         <!-- form started -->
         <form class=" mt-9 w-full mb-44" *ngIf="activeButton === 1">
-
             <div class="mt-9 space-y-9 sm:space-y-7">
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row">
+                <div class="flex  md:space-x-11   flex-col md:flex-row gap-y-2 ">
                     <div class="w-full ">
                         <p class=" text-gray-700 font-semibold font-Jost">Cost of chemical fertilizer
                         </p>
-                        <input formControlName="eg : 4325"
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                        <input formControlName="eg : 4325" 
+                            class="border bg-gray-50 w-full  px-3 rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
                             type="text" placeholder="eg : 4325">
 
                     </div>
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">Farming Type</p>
                         <select formControlName="" placeholder=""
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-2">
+                            class="border bg-gray-50 w-full px-3  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-2">
                             <option class=" default-option" value="" disabled selected hidden>eg : Organic/Inorganic
                             </option>
                             <option class="text-gray-400"></option>
+                            <!-- <option></option>
                             <option></option>
                             <option></option>
                             <option></option>
-                            <option></option>
-                            <option></option>
+                            <option></option> -->
                         </select>
 
                     </div>
                 </div>
                 <!--  -->
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row">
+                <div class="flex  md:space-x-11  gap-y-2 flex-col md:flex-row">
                     <div class="w-full ">
                         <p class=" text-gray-700 font-semibold font-Jost">Crop-wise area
                         </p>
                         <input formControlName=""
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            class="border bg-gray-50 w-full  rounded-lg h-11 px-3 mt-2 focus:outline-none  text-gray-800 "
                             type="text" placeholder="eg : 4325 ">
 
                     </div>
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">Fully Utilized Acker</p>
                         <input formControlName=""
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            class="border bg-gray-50 w-full px-3  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
                             type="text" placeholder="eg : 4325 ">
 
                     </div>
                 </div>
                 <!--  -->
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row">
+                <div class="flex  md:space-x-11  gap-y-2 flex-col md:flex-row">
                     <div class="w-full ">
                         <label class=" text-gray-700 font-semibold font-Jost">If you don't use acer(Organic fertilizer )
                             Are you intersted?
@@ -141,26 +139,26 @@
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">Area you will take</p>
                         <input formControlName="eg : 4325"
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            class="border bg-gray-50 w-full  rounded-lg h-11 px-3 mt-2 focus:outline-none  text-gray-800 "
                             type="text" placeholder="eg : 325H">
 
                     </div>
                 </div>
                 <!--  -->
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row">
+                <div class="flex  md:space-x-11  gap-y-2 flex-col md:flex-row">
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">Crop type you grow</p>
 
                         <select formControlName="" placeholder=" "
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-2">
+                            class="border bg-gray-50 w-full  rounded-lg h-11 px-3  focus:outline-none  text-gray-400 mt-2">
                             <option class=" default-option" value="" disabled selected hidden>eg : Organic/Inorganic
                             </option>
                             <option class="text-gray-400">Wheat</option>
                             <option>Cron</option>
+                            <!-- <option></option>
                             <option></option>
                             <option></option>
-                            <option></option>
-                            <option></option>
+                            <option></option> -->
                         </select>
                     </div>
                     <div class="w-full ">
@@ -181,7 +179,7 @@
 
                 </div>
                 <!--  -->
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row">
+                <div class="flex  md:space-x-11  gap-y-2 flex-col md:flex-row">
                     <div class="w-full ">
                         <label class=" text-gray-700 font-semibold font-Jost">Interset in organic farming
                         </label>
@@ -216,50 +214,50 @@
 
                 </div>
                 <!--  -->
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row">
+                <div class="flex  md:space-x-11  gap-y-2 flex-col md:flex-row">
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">If not ?Explain reason</p>
                         <input formControlName="eg : 4325"
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            class="border bg-gray-50 w-full px-3 rounded-lg h-11  mt-2 focus:outline-none  text-gray-800 "
                             type="text" placeholder="eg : reason">
 
                     </div>
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">process based Value crop</p>
                         <input formControlName="eg : 4325"
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2 mt-2 focus:outline-none  text-gray-800 "
+                            class="border bg-gray-50 w-full px-3 rounded-lg h-11  mt-2 focus:outline-none  text-gray-800 "
                             type="text" placeholder="eg : 4325">
 
                     </div>
 
                 </div>
                 <!--  -->
-                <div class="flex  md:space-x-9  gap-y-2 flex-col md:flex-row  ">
+                <div class="flex  md:space-x-11  gap-y-2 flex-col md:flex-row  ">
 
                     <div class="w-full ml-1 pr-2 ">
-                        <p class="text-gray-700 font-semibold font-Jost mt-2">Process based value crop</p>
+                        <p class="text-gray-700 font-semibold font-Jost">Process based value crop</p>
                         <select formControlName="" placeholder="eg: grass "
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-3">
+                            class="border bg-gray-50 w-full  rounded-lg h-11 px-3  focus:outline-none  text-gray-400 mt-2">
                             <option class=" default-option" value="selected ">eg: wheat /cron</option>
                             <option>wheat</option>
                             <option>cron</option>
+                            <!-- <option></option>
                             <option></option>
-                            <option></option>
-                            <option></option>
+                            <option></option> -->
 
                         </select>
                     </div>
                     <div class="w-full ml-1 pr-2 ">
                         <p class="text-gray-700 font-semibold font-Jost">Fooder/crop do you organise for livestock?</p>
                         <select formControlName="" placeholder="eg: grass "
-                            class="border bg-gray-50 w-full  rounded-lg h-11 p-2  focus:outline-none  text-gray-400 mt-2">
+                            class="border bg-gray-50 w-full  rounded-lg h-11 px-3  focus:outline-none  text-gray-400 mt-2">
                             <option class=" default-option" value="selected ">eg: grass</option>
                             <option class="text-gray-400"></option>
+                            <!-- <option></option>
                             <option></option>
                             <option></option>
                             <option></option>
-                            <option></option>
-                            <option></option>
+                            <option></option> -->
 
                         </select>
 
@@ -335,7 +333,7 @@
                     class="flex border rounded-lg w-36 md:w-64 py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center space-x-2 text-white sm:w-2/5 ">
 
                     <p class="text-white ">Skip & Proceed</p>
-                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="25" height="24" class="hidden sm:block" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                         <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"

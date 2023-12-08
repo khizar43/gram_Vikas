@@ -7,7 +7,7 @@
     <p class="ml-2 text-[#1D2939] text-2xl">Add New Family</p>
   </div>
 
-  <div class="mt-9w-auto ml-12 mr-8 h-auto rounded-md"
+  <div class="mt-9 w-auto ml-12 mr-8 h-auto rounded-md"
     style="background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%)">
     <div class="mx-2 pt-3 flex pb-3">
       <div>
@@ -159,30 +159,26 @@
           <div class="flex items-center me-4">
             <input id="inline-checkbox" type="checkbox" value=""
               class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-
             <label for="inline-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Yes</label>
           </div>
 
           <div class="flex items-center me-4">
             <input id="inline-2-checkbox" type="checkbox" value=""
               class="w-4 h-4 text-blue-600 bg-green-400 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-green-800 focus:ring-2 dark:bg-green-700 dark:border-gray-600">
-
             <label for="inline-2-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">No</label>
           </div>
         </div>
       </div>
     </div>
-
   </form>
   <div class="mt-52">
     <!-- footer -->
-    <footer class=" w-full body-font  h-fit  bg-white  fixed bottom-0 mb-0">
-      <div
-        class=" w-full flex md:items-center  lg:items-center lg:justify-center md:flex-row md:flex-nowrap flex-wrap flex-col">
-        <div class="my-9 md:mx-16  flex items-center gap-x-20">
+    <footer class=" w-full body-font h-fit bg-white fixed bottom-0 mb-0">
+      <div class=" w-full flex ">
+        <div class="my-9 mx-5 flex gap-x-5 w-full items-center justify-center">
           <!-- progress bar -->
-          <div>
-            <div class="relative w-full h-16 ml-10 ">
+          <div class="w-1/3 items-center justify-center">
+            <div class="relative h-16  ">
               <svg class="w-full h-full" viewBox="0 0 100 100">
                 <!-- Background circle -->
                 <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
@@ -197,12 +193,11 @@
                   alignment-baseline="middle">0%</text>
               </svg>
             </div>
-            <p class="text-[#475467] font-medium ml-16">Progress</p>
+            <p class="text-[#475467] font-medium ml-20">Progress</p>
           </div>
-          <div class="w-full ">
-            <button routerLink="/villagers/family-Details"
-              class="flex  ml-8 rounded-lg w-96 py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center  text-white">
-              <p class="text-white ">Skip & Proceed</p>
+          <div class="w-2/3 ">
+            <button routerLink="/villagers/family-Details" class="flex justify-center rounded-lg w-full h-16 py-3 hover:bg-[#14644A] bg-gray-400 items-center ">
+              <p class="text-white text-center">Skip & Proceed</p>
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -214,6 +209,4 @@
       </div>
     </footer>
   </div>
-
 </div>
-<!-- border-2 bg-gray-400 hover:bg-[#14644A] active:bg-[#14644A] text-base font-medium text-white w-full rounded-md h-14" -->

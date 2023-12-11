@@ -263,69 +263,64 @@
                                 <label for="" class="text-[#1D2939] ">No</label>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </form>
-
     </div>
-
 </div>
 <!-- footer -->
-<footer class=" body-font  h-fit  bg-white  fixed  bottom-0 inset-x-0">
-    <div class=" flex md:items-center lg:items-center lg:justify-center  md:flex-row md:flex-nowrap flex-wrap flex-col">
+<div class="mt-52">
+    <footer class=" body-font w-full h-fit  bg-white  fixed bottom-0 mb-0">
+        <div class=" ml-4 flex md:items-center lg:items-center lg:justify-center md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="my-9 md:mx-16  flex items-center  space-x-6 flex-shrink-0 ">
+                <!-- progress bar -->
+                <div>
+                    <div class=" w-20 h-16">
+                        <svg class="w-full h-full" viewBox="0 0 100 100">
+                            <!-- Background circle -->
+                            <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
+                                fill="transparent">
+                            </circle>
+                            <!-- Progress circle -->
+                            <circle class="text-[#046A38]  progress-ring__circle stroke-current" stroke-width="10"
+                                stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
+                                stroke-dashoffset="calc(400 - (400 * 20) / 100)"></circle>
 
-        <div class="my-9 md:mx-16  flex items-center  px-6 gap-x-6 flex-shrink-0 ">
-            <!-- progress bar -->
-            <div class="hidden sm:block">
-                <div class="relative w-20 h-16 ">
-                    <svg class="w-full h-full" viewBox="0 0 100 100">
-                        <!-- Background circle -->
-                        <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
-                            fill="transparent"></circle>
-                        <!-- Progress circle -->
-                        <circle class="text-[#046A38]  progress-ring__circle stroke-current" stroke-width="10"
-                            stroke-linecap="round" cx="50" cy="50" r="40" fill="transparent"
-                            stroke-dashoffset="calc(400 - (400 * 45) / 100)"></circle>
+                            <!-- Center text -->
+                            <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
+                                alignment-baseline="middle"> 45%</text>
 
-                        <!-- Center text -->
-                        <text x="50" y="50" font-family="Verdana" font-size="12" text-anchor="middle"
-                            alignment-baseline="middle">70%</text>
-
-                    </svg>
+                        </svg>
+                    </div>
+                    <p class="text-[#475467] font-medium">Progress</p>
                 </div>
-                <p class="text-[#475467] font-medium">Progress</p>
-            </div>
-            <div class=" ">
-                <button routerLink="/villagers/family-Details"
-                    class="flex  rounded-lg h-16 w-36 md:w-64 py-3 items-center justify-center space-x-2 border-[#046A38] border-2 sm:w-2/5 ">
-                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M19.5 12H5.5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M12.5 19L5.5 12L12.5 5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                    <p class="text-[#046A38]">Previous</p>
-                </button>
-            </div>
-            <div class="">
-                <button routerLink="/villagers/productivity"
-                    class="flex border rounded-lg h-16 w-36 md:w-64 py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center space-x-2 text-white sm:w-2/5 ">
-
-                    <p class="text-white ">Skip & Proceed</p>
-                    <svg width="25" height="24" class="hidden sm:block" viewBox="0 0 25 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-
-                </button>
+                <div class="">
+                    <button routerLink="/villagers/family-Details"
+                        class="flex  rounded-lg w-64 h-16 py-3 items-center justify-center space-x-2 border-[#046A38] border-2">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.5 12H5.5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12.5 19L5.5 12L12.5 5" stroke="#046A38" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p class="text-[#046A38]">Previous</p>
+                    </button>
+                </div>
+                <div class="">
+                    <button routerLink="/villagers/productivity"
+                        class="flex border rounded-lg w-64 h-16 py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center space-x-2 text-white">
+                        <p class="text-white ">Skip & Proceed</p>
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</div>
 <!-- End -->

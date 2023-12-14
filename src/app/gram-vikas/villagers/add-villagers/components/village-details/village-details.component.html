@@ -173,12 +173,13 @@
   </form>
   <div class="mt-52">
     <!-- footer -->
-    <footer class=" w-full body-font h-fit bg-white fixed bottom-0 mb-0">
-      <div class=" w-full flex ">
-        <div class="my-9 mx-5 flex gap-x-5 w-full items-center justify-center">
+    <footer class=" w-full body-font  h-fit  bg-white  fixed bottom-0 mb-0">
+      <div
+        class=" w-full flex md:items-center  lg:items-center lg:justify-center md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="my-9 md:mx-16  flex items-center gap-x-20">
           <!-- progress bar -->
-          <div class="w-1/3 items-center justify-center">
-            <div class="relative h-16  ">
+          <div>
+            <div class="relative w-full h-16 ml-9 ">
               <svg class="w-full h-full" viewBox="0 0 100 100">
                 <!-- Background circle -->
                 <circle class="text-gray-200 stroke-current" stroke-width="10" cx="50" cy="50" r="40"
@@ -193,11 +194,12 @@
                   alignment-baseline="middle">0%</text>
               </svg>
             </div>
-            <p class="text-[#475467] font-medium ml-20">Progress</p>
+            <p class="text-[#475467] font-medium ml-14">Progress</p>
           </div>
-          <div class="w-2/3 ">
-            <button routerLink="/villagers/family-Details" class="flex justify-center rounded-lg w-full h-16 py-3 hover:bg-[#14644A] bg-gray-400 items-center ">
-              <p class="text-white text-center">Skip & Proceed</p>
+          <div class="w-full ">
+            <button routerLink="/villagers/family-Details"
+              class="flex  ml-8 rounded-lg w-96 h-16 py-3 hover:bg-[#14644A] bg-gray-400 items-center justify-center  text-white">
+              <p class="text-white ">Skip & Proceed</p>
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 12H19.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="2" stroke-linecap="round"

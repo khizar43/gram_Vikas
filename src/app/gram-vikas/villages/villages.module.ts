@@ -8,6 +8,7 @@ import { VillageStatusComponent } from './components/village-status/village-stat
 import { VillageFacilityComponent } from './components/village-facility/village-facility.component';
 import { UploadVillagePhotoComponent } from './components/upload-village-photo/upload-village-photo.component';
 import { VillageDashboardFooterComponent } from './components/village-dashboard-footer/village-dashboard-footer.component';
+import { ViewVillagePhotoComponent } from './components/view-village-photo/view-village-photo.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { VillageDashboardFooterComponent } from './components/village-dashboard-
     VillageStatusComponent,
     VillageFacilityComponent,
     UploadVillagePhotoComponent,
-    VillageDashboardFooterComponent
+    VillageDashboardFooterComponent,
+    ViewVillagePhotoComponent
   ],
   imports: [
     CommonModule,

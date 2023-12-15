@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Gramvikas-pwa';
+isScrolled: any;
 
 constructor(){
   // throw new Error("testing sentry");

@@ -9,6 +9,7 @@ import { ProductivityComponent } from './components/productivity/productivity.co
 import { ResourcesComponent } from './components/resources/resources.component';
 import { WastePlasticManagementComponent } from './components/waste-plastic-management/waste-plastic-management.component';
 import { FamilyMemberDetailsComponent } from './components/family-member-details/family-member-details.component';
+import { ViewFamilyMemberDetailsComponent } from './components/view-family-member-details/view-family-member-details.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FamilyMemberDetailsComponent } from './components/family-member-details
     ProductivityComponent,
     ResourcesComponent,
     WastePlasticManagementComponent,
-    FamilyMemberDetailsComponent
+    FamilyMemberDetailsComponent,
+    ViewFamilyMemberDetailsComponent
   ],
   imports: [
     CommonModule,

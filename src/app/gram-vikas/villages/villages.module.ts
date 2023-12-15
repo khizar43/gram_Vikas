@@ -7,6 +7,7 @@ import { UpdateVillageComponent } from './components/update-village/update-villa
 import { VillageStatusComponent } from './components/village-status/village-status.component';
 import { VillageFacilityComponent } from './components/village-facility/village-facility.component';
 import { UploadVillagePhotoComponent } from './components/upload-village-photo/upload-village-photo.component';
+import { VillageDashboardFooterComponent } from './components/village-dashboard-footer/village-dashboard-footer.component';
 import { ViewVillagePhotoComponent } from './components/view-village-photo/view-village-photo.component';
 
 
@@ -18,6 +19,7 @@ import { ViewVillagePhotoComponent } from './components/view-village-photo/view-
     VillageStatusComponent,
     VillageFacilityComponent,
     UploadVillagePhotoComponent,
+    VillageDashboardFooterComponent,
     ViewVillagePhotoComponent
   ],
   imports: [

@@ -72,50 +72,49 @@ export class HomeComponent implements OnInit {
   // Random color
   //  1
   // getRandomColor() {
-  //   // Generate a random background color.
+  // Generate a random background color.
   //   const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  //   console.log(`Random Color : ${randomColor}`); // Log the random color to the console
   //   return randomColor;
   // }
 
   // 2
-  getRandomColor(): string {
-    const predefinedColors: string[] = [
-      '#FF0000', // Red
-      '#00FF00', // Lime
-      '#0000FF', // Blue
-      '#FFA500', // Orange
-      '#800080', // Purple
-      '#008080', // Teal
-      '#FF00FF', // Fuchsia
-      '#008000', // Green
-      '#00FFFF', // Aqua
-      '#FF4500', // OrangeRed
-      '#8A2BE2', // BlueViolet
-      '#FFD700', // Gold
-      '#32CD32', // LimeGreen
-      '#8B008B', // DarkMagenta
-      '#2F4F4F', // DarkSlateGray
-      '#00CED1', // DarkTurquoise
-      '#FF6347', // Tomato
-      '#8B4513', // SaddleBrown
-      '#FF69B4', // HotPink
-    ];
-    // Shuffle the predefined colors array
-    const shuffledColors = this.shuffleArray(predefinedColors);
+  // getRandomColor(): string {
+  //   const predefinedColors: string[] = [
+  //     '#FF0000', // Red
+  //     '#00FF00', // Lime
+  //     '#0000FF', // Blue
+  //     '#FFA500', // Orange
+  //     '#800080', // Purple
+  //     '#008080', // Teal
+  //     '#FF00FF', // Fuchsia
+  //     '#008000', // Green
+  //     '#00FFFF', // Aqua
+  //     '#FF4500', // OrangeRed
+  //     '#8A2BE2', // BlueViolet
+  //     '#FFD700', // Gold
+  //     '#32CD32', // LimeGreen
+  //     '#8B008B', // DarkMagenta
+  //     '#2F4F4F', // DarkSlateGray
+  //     '#00CED1', // DarkTurquoise
+  //     '#FF6347', // Tomato
+  //     '#8B4513', // SaddleBrown
+  //     '#FF69B4', // HotPink
+  //   ];
+  //   // Shuffle the predefined colors array
+  //   const shuffledColors = this.shuffleArray(predefinedColors);
 
-    // Pick a color from the shuffled array
-    const randomColor = shuffledColors[0];
+  //   // Pick a color from the shuffled array
+  //   const randomColor = shuffledColors[0];
 
-    console.log('Random Color:', randomColor);
-    return randomColor;
-  }
-  shuffleArray(array: any[]): any[] {
-    // Fisher-Yates shuffle algorithm
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-  }
+  //   console.log('Random Color:', randomColor);
+  //   return randomColor;
+  // }
+  // shuffleArray(array: any[]): any[] {
+  //   // Fisher-Yates shuffle algorithm
+  //   for (let i = array.length - 1; i > 0; i--) {
+  //     const j = Math.floor(Math.random() * (i + 1));
+  //     [array[i], array[j]] = [array[j], array[i]];
+  //   }
+  //   return array;
+  // }
 }

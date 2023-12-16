@@ -1,11 +1,11 @@
 <!-- Start -->
 <div class="bg-[#F8F9FC]">
-  <div class="overflow-hidden border-6 px-8  space-y-9 bg-[#F8F9FC]">
+  <div class="overflow-hidden border-6 px-8 space-y-9 bg-[#F8F9FC]">
     <!-- Search Bar -->
     <div class="my-9 space-y-10">
       <div class="">
-        <div class="relative grid mx-6 -mb-10 ">
-          <img src="../assets/icons/Search.svg" alt="Search Logo"/>
+        <div class="relative grid mx-6 -mb-10">
+          <img src="../assets/icons/Search.svg" alt="Search Logo" />
         </div>
         <input
           type="text"
@@ -21,7 +21,7 @@
         *ngFor="let count of data_count"
       >
         <!-- Villages Card -->
-        <div class="border-1 rounded-lg shadow-md p-3 bg-[#FFF]" >
+        <div class="border-1 rounded-lg shadow-md p-3 bg-[#FFF]">
           <div class="flex flex-row justify-between items-stretch">
             <button class="text-[#046A38] text-[1.5rem] font font-semibold">
               {{ count.villages }}
@@ -33,7 +33,7 @@
           </button>
         </div>
         <!-- Families Card -->
-        <div class="border-1 rounded-lg shadow-md p-3 bg-[#FFF]" >
+        <div class="border-1 rounded-lg shadow-md p-3 bg-[#FFF]">
           <div class="flex flex-row justify-between items-stretch">
             <button class="text-[#FF671F] text-[1.5rem] font font-semibold">
               {{ count.families }}
@@ -63,10 +63,10 @@
       <div
         class="w-[79.7%] py-3 bg-white border-1 border-gray-100 rounded-xl shadow-md flex flex-row justify-between px-3"
       >
-        <div class="my-3 px-3 w-75 ">
+        <div class="my-3 px-3 w-75">
           <label
             for="slider"
-            class="text-[1.13rem] text-[#1D2939] font-medium my-3 "
+            class="text-[1.13rem] text-[#1D2939] font-medium my-3"
             >Form Target</label
           >
           <br />
@@ -107,7 +107,7 @@
         </div>
       </div>
       <!-- Add Village And Add Family Buttons -->
-      <div class="w-[39.1%] flex flex-col justify-around space-y-4 ">
+      <div class="w-[39.1%] flex flex-col justify-around space-y-4">
         <button
           routerLink="/villages/add-village"
           class="bg-green-600 flex flex-row p-[2rem] rounded-2xl gap-6 justify-center items-center"
@@ -127,18 +127,31 @@
   </div>
   <!-- Form to be Fulfilled -->
   <div>
-    <div class="bg-[#EBE9FE] p-8 shadow-md my-9 ">
-      <div class="flex justify-between  ">
-        <p class="text-[#1D2939] text-[1.125rem] font-medium ">
+    <div class="bg-[#EBE9FE] p-8 shadow-md my-9">
+      <div class="flex justify-between">
+        <p class="text-[#1D2939] text-[1.125rem] font-medium">
           Form to be Fulfilled
         </p>
-        <button routerLink="/dashboard/form-to-be-filled" class="text-[#1D2939] text-[1.125rem] font-medium">View All</button>
+        <button
+          routerLink="/dashboard/form-to-be-filled"
+          class="text-[#1D2939] text-[1.125rem] font-medium"
+        >
+          View All
+        </button>
       </div>
-      <div class=" pt-4">
+      <div class="pt-4">
         <div class="flex flex-row justify-between gap-4">
-          <div class="rounded-lg w-1/4 shadow-xl p-3 bg-white space-y-2" routerLink="/villages/villages-status">
-            <div class="flex flex-row justify-between items-stretch" routerLink="/villages/villages-status" >
-              <p class="text-[#06038D] text-[0.65rem] font-normal">Village Form</p>
+          <div
+            class="rounded-lg w-1/4 shadow-xl p-3 bg-white space-y-2"
+            routerLink="/villages/villages-status"
+          >
+            <div
+              class="flex flex-row justify-between items-stretch"
+              routerLink="/villages/villages-status"
+            >
+              <p class="text-[#06038D] text-[0.65rem] font-normal">
+                Village Form
+              </p>
               <img src="../assets/icons/Arrow.svg" alt="Arrow" />
             </div>
             <p class="text-[#06038D] text-[1rem] font-medium">Karegaon</p>
@@ -148,7 +161,9 @@
           </div>
           <div class="rounded-lg w-1/4 shadow-xl p-3 bg-white space-y-2">
             <div class="flex flex-row justify-between items-stretch">
-              <p class="text-[#06038D] text-[0.65rem] font-normal">Village Form</p>
+              <p class="text-[#06038D] text-[0.65rem] font-normal">
+                Village Form
+              </p>
               <img src="../assets/icons/Arrow.svg" alt="Arrow" />
             </div>
             <p class="text-[#06038D] text-[1rem] font-medium">Vadgaon</p>
@@ -156,9 +171,17 @@
               <span class="text-[#FDB022]">1/3</span> Steps Completed
             </p>
           </div>
-          <div class="rounded-lg w-1/4 shadow-xl p-3 bg-white space-y-2"  routerLink="/villagers/villagers-status">
-            <div class="flex flex-row justify-between items-stretch"  routerLink="/villagers/villagers-status">
-              <p class="text-[#06038D] text-[0.65rem] font-normal" >Family Form</p>
+          <div
+            class="rounded-lg w-1/4 shadow-xl p-3 bg-white space-y-2"
+            routerLink="/villagers/villagers-status"
+          >
+            <div
+              class="flex flex-row justify-between items-stretch"
+              routerLink="/villagers/villagers-status"
+            >
+              <p class="text-[#06038D] text-[0.65rem] font-normal">
+                Family Form
+              </p>
               <img src="../assets/icons/Arrow.svg" alt="Arrow" />
             </div>
             <p class="text-[#06038D] text-[1rem] font-medium">Rajbeer Family</p>
@@ -168,7 +191,9 @@
           </div>
           <div class="rounded-lg w-1/4 shadow-xl p-3 bg-white space-y-2">
             <div class="flex flex-row justify-between items-stretch">
-              <p class="text-[#06038D] text-[0.65rem] font-normal">Family Form</p>
+              <p class="text-[#06038D] text-[0.65rem] font-normal">
+                Family Form
+              </p>
               <img src="../assets/icons/Arrow.svg" alt="Arrow" />
             </div>
             <p class="text-[#06038D] text-[1rem] font-medium">Radhee Family</p>
@@ -181,7 +206,5 @@
     </div>
   </div>
 </div>
-
-
 
 <!-- End -->

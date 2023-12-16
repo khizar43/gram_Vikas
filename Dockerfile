@@ -13,8 +13,8 @@ COPY . /app/
 
 RUN npm install
 # RUN npm install react-search-field --save
-#RUN npm run build
-RUN ng build
+RUN npm run build
+
 
 #prepare nginx
 

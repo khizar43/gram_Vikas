@@ -1,7 +1,7 @@
 # Author: Vishal B
 # pull official base image
 #FROM node:14-alpine3.12 as build
-FROM node:18.14.0-alpine3.14 as build
+FROM node:18.19-alpine3.19 as build
 
 #working directory of containerized app
 WORKDIR /app

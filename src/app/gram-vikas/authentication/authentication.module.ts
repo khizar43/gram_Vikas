@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { AuthenticationRoutingModule } from './authentication-routing.module';
 import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
 import { LandingComponent } from './components/landing/landing.component';

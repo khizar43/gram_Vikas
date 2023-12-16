@@ -15,6 +15,7 @@ RUN npm install
 # RUN npm install react-search-field --save
 RUN npm run build
 
+
 #prepare nginx
 
 FROM nginx:1.16.0-alpine

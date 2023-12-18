@@ -5,6 +5,7 @@ import { VillageDashboardComponent } from './components/village-dashboard/villag
 import { VillageStatusComponent } from './components/village-status/village-status.component';
 import { UploadVillagePhotoComponent } from './components/upload-village-photo/upload-village-photo.component';
 import { VillageFacilityComponent } from './components/village-facility/village-facility.component';
+import { ViewVillagePhotoComponent } from './components/view-village-photo/view-village-photo.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,10 @@ const routes: Routes = [
   },
 {
   path:'village-facility',component:VillageFacilityComponent,
-}
+  },
+  {
+    path:'view-village-photo',component:ViewVillagePhotoComponent,
+  }
 
 ];
 

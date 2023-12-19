@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { VillageComponent } from './components/village/village.component';
-import { AgentProfileComponent } from './components/agent-profile/agent-profile.component';
-import { FormToBeFilledComponent } from './components/form-to-be-filled/form-to-be-filled.component';
-import { HomeComponent } from './components/home/home.component'
-import { NotificationComponent } from './components/notification/notification.component'
+import { VillageComponent } from './Components/village/village.component';
+import { AgentProfileComponent } from './Components/agent-profile/agent-profile.component';
+import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-be-filled.component';
+import { HomeComponent } from './Components/home/home.component';
+import { NotificationComponent } from './Components/notification/notification.component';
 
 const routes: Routes = [
   {

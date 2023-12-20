@@ -16,6 +16,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
   imports: [
     CommonModule,
     SharedRoutingModule
+  ],
+  exports:[
+    SidebarComponent,
+    HeaderComponent,
+    FooterComponent
+
   ]
 })
 export class SharedModule { }

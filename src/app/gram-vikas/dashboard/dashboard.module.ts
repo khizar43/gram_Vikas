@@ -10,6 +10,7 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
 import { DashboardSummaryComponent } from './dashboard-summary/components/dashboard-summary/dashboard-summary.component';
 import { FormsModule } from '@angular/forms';
 import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-be-filled.component';
+import { SidebarComponent } from '../shared/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { FormToBeFilledComponent } from './Components/form-to-be-filled/form-to-
     FooterComponent,
     DashboardSummaryComponent,
     FormToBeFilledComponent,
+    SidebarComponent,
   ],
   imports: [CommonModule, DashboardRoutingModule, FormsModule],
+  
 })
 export class DashboardModule { }

@@ -3,10 +3,10 @@
     <!-- overflow-y-auto and overflow hidden -->
     <div class="mt-52 grid h-screen ">
         <div class=" flex  flex-col min-w-max h-fit  cursor-pointer ">
-                    <!--  -->
+            <!--  -->
             <ul class="m-2  space-y-2 pt-2">
                 <!-- Home -->
-                <div class=" flex gap-x-5  icon bg-[#F5FBFF] rounded-lg px-2 py-2" routerLink=""
+                <div class=" flex gap-x-5  icon bg-[#F5FBFF] rounded-lg px-2 py-2" routerLink="/dashboard"
                     routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                     <div>
                         <li class=" flex items-center  min-w-max  rounded-lg cursor-pointer">
@@ -28,7 +28,7 @@
                 </div>
                 <!--Village  -->
                 <div class=" flex gap-x-5 icon  bg-[#F5FBFF] rounded-lg px-2  py-2" routerLinkActive="active"
-                    [routerLinkActiveOptions]="{exact: true}">
+                    routerLink="/dashboard/village" [routerLinkActiveOptions]="{exact: true}">
                     <div>
                         <li class=" flex items-center  min-w-max  rounded-lg cursor-pointer">
                             <svg width="36" height="37" viewBox="0 0 36 37" fill="none"
@@ -78,7 +78,7 @@
                 </div>
                 <!--notification  -->
                 <div class=" flex gap-x-5  icon  bg-[#F5FBFF] px-2  py-2 rounded-lg" routerLinkActive="active"
-                    [routerLinkActiveOptions]="{exact: true}">
+                    routerLink="/dashboard/notification" [routerLinkActiveOptions]="{exact: true}">
                     <div>
                         <li class=" flex items-center  min-w-max  rounded-lg cursor-pointer">
                             <svg width="36" height="37" viewBox="0 0 36 37" fill="none"
@@ -115,7 +115,7 @@
                 </div>
                 <!--agent profile  -->
                 <div class=" flex gap-x-5  icon bg-[#F5FBFF]  px-2  py-2 rounded-lg" routerLinkActive="active"
-                    [routerLinkActiveOptions]="{exact: true}">
+                    routerLink="/dashboard/agent-profile" [routerLinkActiveOptions]="{exact: true}">
                     <div>
                         <li class=" flex items-center  min-w-max  rounded-lg cursor-pointer">
                             <svg width="36" height="37" viewBox="0 0 36 37" fill="none"

@@ -6,17 +6,17 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class VillageService {
-  get_villages_count() {
-    throw new Error('Method not implemented.');
-  }
+  // get_villages_count() {
+  //   throw new Error('Method not implemented.');
+  // }
 
   village = environment.dashboard
   constructor(private _http: HttpClient) { }
-  getVillage() {
+  get_villages_count() {
     return this._http.get(this.village + '/villages')
   }
-
   get_families_count() {
     return this._http.get(this.village + '/families')
   }
+
 }

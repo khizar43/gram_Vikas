@@ -1,65 +1,55 @@
 <!-- This div contains the main content of the page -->
-<div
-  class="flex flex-col flex-nowrap w-screen justify-center items-center mt-0"
->
+<div class="flex flex-col flex-nowrap w-screen justify-center items-center mt-0">
   <!-- Logo and Title -->
   <div class="flex flex-row justify-center items-center m-20">
     <!-- The logo image -->
-    <img
-      src="../assets/icons/icon-144x144.png"
-      alt="Logo"
-      class="w-[3.75rem] h-[3.30rem]"
-    />
-    <div class="mx-2">
-      <!-- The title of the page -->
-      <h1 class="text-[2rem] font-semibold font">Samagra Gram Vikas</h1>
-      <!-- A tagline for the page -->
-      <p class="text-[0.95rem] font-semibold font text-[#FF671F]">
+    <img src="../assets/icons/icon-144x144.png" alt="Logo" class="w-[3.75rem] h-[3.30rem]" />
+    <div class="mt-4 text-center">
+      <!-- Header title -->
+      <h1 class="text-lg md:text-[3rem] lg:text-[3rem] font-semibold hidden md:block lg:block font-semibold font">
+        Samagra Gram Vikas</h1>
+      <!-- Header tagline -->
+      <p class="text-md md:text-[1.38rem] lg:text-[1.38rem] font-semibold text-[#FF671F] mt-2 hidden md:block lg:block">
         For the people, By the people, Of the people.
       </p>
     </div>
   </div>
 
   <!-- Heading -->
-  <h1 class="text-[#344054] text-[2.25rem] font-bold py-4">
+  <h1 class=" text-[#344054] text-[1.38rem] md:text-[2.25rem] lg:text-[3rem] font-bold py-4">
     Choose Your App Language
   </h1>
 
   <!-- Language Buttons -->
-  <div class="py-10">
+  <div class="py-6 md:py-8 lg:py-10 mt-2">
     <!-- A grid to display language buttons -->
     <div
-      class="grid grid-cols-2 items-center justify-center self-stretch gap-9 w-[31.625rem]"
-    >
+      class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 items-center justify-center self-stretch gap-9 sm:w-48 md:w-[31.625rem] lg:w-[31.625rem] md:gap-6 ">
       <!-- English Button -->
       <button
-        class="py-10 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl"
-        routerLink="/login"
-      >
+        class=" py-4 md:py-6 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl "
+        routerLink="/login">
         English
       </button>
 
       <!-- Hindi Button -->
       <button
-        class="py-10 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl"
-        routerLink="/login"
-      >
+        class="py-4 md:py-6 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl "
+        routerLink="/login">
         हिंदी
       </button>
 
       <!-- Marathi Button -->
       <button
-        class="py-10 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl"
-        routerLink="/login"
-      >
+        class="py-4 md:py-6 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl "
+        routerLink="/login">
         मराठी
       </button>
 
       <!-- Kannada Button -->
       <button
-        class="py-10 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl"
-        routerLink="/login"
-      >
+        class="py-4 md:py-6 justify-center items-center gap-2 white_ text-[1.75rem] font-medium hover:bg-[#046A38] border-1 rounded-xl "
+        routerLink="/login">
         ಕನ್ನಡ
       </button>
     </div>

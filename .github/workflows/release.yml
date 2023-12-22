@@ -1,9 +1,10 @@
 name: Release to EC2 Instance 
 
 on:
-  push:
-    branches:
-      - dev
+  workflow_run:
+    workflows: ["Build and Push Docker Image"]
+    types:
+      - completed
 
 jobs:
   deploy:
@@ -12,6 +13,7 @@ jobs:
     steps:
     - name: Deploy into EC2 instance and pull the latest changes
       run: |
+          docker rmi khizaryounus/petzey:latest 
           cd /home/ubuntu/linux
           docker-compose -f /home/ubuntu/linux/docker-compose.yml pull
           docker-compose -f /home/ubuntu/linux/docker-compose.yml up -d

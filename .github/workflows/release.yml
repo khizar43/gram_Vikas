@@ -1,0 +1,19 @@
+name: Release to EC2 Instance 
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+    - name: Deploy into EC2 instance and pull the latest changes
+      uses: appleboy/ssh-action@master
+      with:
+        script: |
+            cd /home/ubuntu/linux
+            docker-compose -f /home/ubuntu/linux/docker-compose.yml pull
+            docker-compose -f /home/ubuntu/linux/docker-compose.yml up -d

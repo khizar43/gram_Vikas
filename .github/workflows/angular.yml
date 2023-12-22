@@ -17,7 +17,7 @@ jobs:
       run: docker build -t khizaryounus/petzey:ui_web .
 
     - name: Login to Docker Registry
-      run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} your-docker-registry
+      run: echo  "${{ secrets.DOCKER_PASSWORD }}"  | docker login -n "khizaryounus" --password-stdin
 
     - name: Push Docker Image
       run: docker push khizaryounus/petzey:ui_web

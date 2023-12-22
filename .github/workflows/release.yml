@@ -11,8 +11,7 @@ jobs:
 
     steps:
     - name: Deploy into EC2 instance and pull the latest changes
-      with:
-        script: |
-            cd /home/ubuntu/linux
-            docker-compose -f /home/ubuntu/linux/docker-compose.yml pull
-            docker-compose -f /home/ubuntu/linux/docker-compose.yml up -d
+      run: |
+          cd /home/ubuntu/linux
+          docker-compose -f /home/ubuntu/linux/docker-compose.yml pull
+          docker-compose -f /home/ubuntu/linux/docker-compose.yml up -d

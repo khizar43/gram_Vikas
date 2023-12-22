@@ -22,3 +22,5 @@ jobs:
 
     - name: Push Docker Image
       run: docker push khizaryounus/petzey:ui_web
+           docker tag khizaryounus/petzey:ui_web khizaryounus/petzey:latest
+           docker push khizaryounus/petzey:latest
